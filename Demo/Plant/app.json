@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my-message/my-message",
+    "pages/cyclopedia-detail/cyclopedia-detail",
+    "pages/cyclopedia/cyclopedia",
+    "pages/oil-detail/oil-detail",
+    "pages/my-poster/my-poster",
+    "pages/sniff-detail/sniff-detail",
+    "pages/my-integral/my-integral",
+    "pages/search/search",
+    "pages/sniff/sniff",
+    "pages/my-about/my-about",
+    "pages/bussback/bussback",
+    "pages/my-nyr/my-nyr",
+    "pages/my-course/my-course",
+    "pages/my-spoor/my-spoor",
+    "pages/mine/mine",
+    "pages/my-collect/my-collect",
+    "pages/tutor-list/tutor-list",
+    "pages/tutor/tutor",
+    "pages/course-detail/course-detail",
+    "pages/course-list/course-list",
+    "pages/logs/logs",
+    "pages/course/course",
+    "pages/oil/oil",
+    "pages/my-shopping/my-shopping",
+    "pages/my-integral-detail/my-integral-detail",
+    "pages/botany/botany",
+    "pages/botany-detail/botany-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/oil/oil",
+        "text": "方子"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "学堂"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wx171c65dfb960c596"
+  ]
+}

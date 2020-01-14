@@ -1,0 +1,52 @@
+<!--pages/cyclopedia-detail/cyclopedia-detail.wxml-->
+<view class="container">
+    <view class="list-001">
+        <view class="h-txt">芳香疗法是什么？</view>
+        <view class="list-01">
+            <view class="referral">
+                <view class="class-hours">
+                    芳香疗法是指利用精油作为媒介，并以吸闻、涂抹、扩香、泡浴及按摩等方式经由呼吸道或皮肤吸收进入体内，以促进身体和心灵都健康的一种疗法。芳香疗法又可以称为香薰疗法，简称芳疗，来自拉丁文Aromatherapy。
+
+Aroma寓意芬芳、香气，而Therapy是指对疾病的治疗、调理、辅助疗法。芳香疗法与传统中医、花精疗法、草药疗法十分相似。
+                </view>  
+            </view>
+        </view>
+    </view>
+
+    <view class="compare-title d-row j-start">
+        <text class="solid"></text>
+        相关问题
+    </view>
+    <view class="cyclopedia-01">
+        <view class="cyc-list">
+            1.芳香疗法是什么？
+        </view>
+        <view class="cyc-list">
+            2.芳香疗法和传统医学有什么关系？ 
+        </view>
+        <view class="cyc-list">
+          3.芳香疗法的历史有多久？
+        </view>
+        <view class="cyc-list">
+            4.芳香疗法的按摩是什么？
+        </view>
+        <view class="cyc-list">
+            5.精油是什么？
+        </view>
+        <view class="cyc-list">
+            6.精油是怎样被制造出来的？
+        </view>
+        <view class="cyc-list">
+           7.身体是怎样吸收精油？
+        </view>
+        <view class="cyc-list">
+            8.如何使用精油？
+        </view>
+        <view class="cyc-list">
+           9.精油的吸收速度和频率有什么关系？
+        </view>
+        <view class="cyc-list">
+           10.精油如何在体内代谢？
+        </view>
+    </view>
+</view>

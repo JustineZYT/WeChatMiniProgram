@@ -1,0 +1,37 @@
+<!--pages/sniff-detail/sniff-detail.wxml-->
+<view class="container">
+  <view class="adver">
+    <image src="../../images/default-01.png"  class="img-ad"/>
+    <view class="botany-name">
+        <view class="flower-name">花香調</view>
+        <view class="flower-englist-name">FLORAI</view>
+      </view>
+  </view>
+  <view class="introduce">
+    <view class="introduce-title">
+      花香調相關精油
+    </view>
+    <view class="english-name">Floral related essential oil</view>
+    <view class="introduce-content">
+      主要是從花朵萃取出來的精油·部分是從葉
+      子或望萃取出來。溫暖的香氣,能起到鼓
+      舞丶唤醒的效果:一向都最得人心°適合在
+      受到挫折丶情緒欠佳或處理交際問題上,能
+      带來愉快丶激勵丶自信
+    </view>
+  </view>
+
+  <view class="list">
+        <block wx:for="{{listData}}">
+            <view class="oil-nav-01 d-row j-start" bindtap="goOilDetail">
+                <view class="oil-name">
+                  <image class="oil-img" src="{{item.url}}" />
+                  <view class="oil-img-name">
+                    <view class="h1-txt">{{item.name}}</view>
+                    <view class="h6-txt">OIL</view>
+                  </view>
+                </view>
+            </view>
+        </block>
+  </view>
+</view>

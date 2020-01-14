@@ -1,0 +1,97 @@
+<!--pages/course-detail/course-detail.wxml-->
+<view class="container">
+  <view class="video-list">
+    <image src="../../images/default.png" class="video-img" />
+  </view>
+  <view class="tip d-row j-between">
+    <view class="infor-01 d-row">
+      <view class="like-people">加入学习:15人</view>
+      <view class="solid">|</view>
+      <view class="course-num">课时:14</view>
+    </view>
+    <view class="infor-02 d-row">
+      <view class="zan-num"><image class="img48"  src="../../images/icon/icon-d-dz.png" /></view>
+      <view class="cang-num"><image class="img48"  src="../../images/icon/icon-d-sc.png"/></view>
+    </view>
+  </view>
+  <view class="explain"></view>
+
+
+  <tabCommon tabList="{{listCourse}}" bindclickTab="clickTab" />
+  
+  <view class="detaile-list">
+      <block  wx:if="{{tabIndex==0}}">
+        <view class="infor-menu">
+            <view>导师介绍</view>
+            <view>洪黎明</view>
+            <view>洪立明 Frank老师,你的香氛顾问
+              Frank老师来自台湾,是在芳疗领域有超过20年从业经验的
+              芳疗大师。对于气味, Frank老师相当敏感,似乎拥有天生的
+              辨香才前,甚至能分辨入工和天然的香味。正因如此, Frank
+              老师才能做到对各种精油的特性和香气了如指掌,能够根据
+              不同需求调配处不同的香气。不同的香氛有迥异的性格,赋
+              予人多样的气质;不同的女性在不同的场合,匹配特定的香
+              氛。在芳香美活, Frank老师将深度剖析有机芳香产品的调配
+              和使用方法,解析女人、香氛、场景之间的搭配技巧。成为
+              你的香气顾问。
+            </view>
+            <view>※擅长芳香植物形态学、化学、精油调香</view>
+            <view>柏檀培训学院主讲讲师</view>
+            <view>肯梦学院芳香疗法概论讲师</view>
+            <view>英国FPA认证导师</view>
+            <view>多家知名品牌调香顾问</view>
+            <view>《精油化学》《明式调香》等书的作者</view>
+        </view>
+      </block>
+       <block  wx:if="{{tabIndex==1}}">
+        <view class="list-course">
+            <view class="course-01 d-row j-start">
+                  <image  class="play-img img48" src="../../images/icon/play.png" />
+                  <view class="course-name d-row j-start">
+                      <view class="h3-title">第一课</view>
+                      <view class="h3-tip">讲解花香调相关精油</view>
+                  </view>
+                  <view class="record d-row">
+                    <view class="jd">进度:80%</view>
+                    <image class="play-img ml15 img48" src="../../images/icon/shuo-open.png" />
+                  </view>
+            </view>
+        </view>
+        <view class="list-course">
+            <view class="course-01 d-row j-start">
+                  <image  class="play-img img48" src="../../images/icon/play.png" />
+                  <view class="course-name d-row j-start">
+                      <view class="h3-title">第二课</view>
+                      <view class="h3-tip">讲解花香调相关精油二</view>
+                  </view>
+                  <view class="record">
+                    <view class="jd"></view>
+                    <image  class="play-img img48" src="../../images/icon/shuo-close.png" />
+                  </view>
+            </view>
+        </view>
+      </block>
+      
+      <block  wx:if="{{tabIndex==2}}">
+        <view class="review">
+                <view class="review-list">
+                  <view class="base-txt d-row j-start mb15"><view class="cus-name">张倩</view><view class="cus-time ml15">2019-09-10   15:25:33</view></view>
+                  <view class="rev-content">老师讲课风趣幽默,知识剖析分析通俗易懂</view>
+                </view>
+                <view class="review-list">
+                  <view class="base-txt d-row j-start mb15"><view class="cus-name">张倩</view><view class="cus-time ml15">2019-09-10   15:25:33</view></view>
+                  <view class="rev-content">老师讲课风趣幽默,知识剖析分析通俗易懂</view>
+                </view>
+                <view class="go-review">
+                    <image class="review-img" src="../../images/icon/review.png" />
+                </view>
+                <view class="review-edit">
+
+                </view>
+        </view>
+      </block>
+  </view>
+
+
+  
+</view>

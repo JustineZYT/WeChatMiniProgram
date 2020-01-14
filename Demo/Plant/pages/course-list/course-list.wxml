@@ -1,0 +1,43 @@
+<!--pages/course-list/course-list.wxml-->
+<view class="container">
+    <view class="m-swiper">
+       <swiper class="swiper-banner" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" indicator-dots="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}" >
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" mode="scaleToFill" style="height:340rpx;"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="course-list">   
+        <view class="list-01 d-row j-start">
+            <image src="../../images/default.png" class="course-img" />
+            <view class="referral">
+                <view class="course-name">果香调课程初级</view>
+                <view class="class-hours">课时:18 </view>
+                <view class="people">感兴趣人数:   1669</view>
+            </view>
+            <view class="course-price"></view>
+        </view>
+        <view class="list-01 d-row j-start">
+            <image src="../../images/default.png" class="course-img" />
+            <view class="referral">
+                <view class="course-name">果香调课程中级</view>
+                <view class="class-hours">课时:12 </view>
+                <view class="people">感兴趣人数:   1668</view>
+            </view>
+            <view class="course-price">￥ 366</view>
+        </view>
+        <view class="list-01 d-row j-start">
+            <image src="../../images/default.png" class="course-img" />
+            <view class="referral">
+                <view class="course-name">果香调课程高级</view>
+                <view class="class-hours">课时:5 </view>
+                <view class="people">感兴趣人数:   3999</view>
+            </view>
+            <view class="course-price">￥ 188</view>
+        </view>
+    </view>
+</view>

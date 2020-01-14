@@ -1,0 +1,49 @@
+/* pages/cyclopedia/cyclopedia.wxss */
+@import "/common/base.wxss";
+
+.list-001{
+  margin: 25rpx;
+}
+.h-txt{
+  height: 80rpx;
+  display: flex;
+  text-align: right;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  color: #444444;
+  background: #ffffff;
+  border-bottom: 1rpx solid #9f9f9f;
+}
+.list-01{
+  padding: 25rpx;
+  background: #ffffff;
+}
+.referral{
+  font-size: 30rpx;
+}
+.class-hours{
+  color: #666666;
+  line-height: 50rpx;
+}
+.cyclopedia-01{
+  margin: 25rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #efeffe;
+  color: #444444;
+  box-shadow:0 0 2px #000;
+}
+.cyc-list{
+  height: 80rpx;
+  display: flex;
+  width: 100%;
+  text-align: right;
+  align-items: flex-start;
+  border-bottom: 1rpx solid #9f9f9f;
+  background: #ffffff;
+  padding:0rpx 15rpx;
+}
+.cyc-list:last-of-type{
+  border-bottom: none;
+}

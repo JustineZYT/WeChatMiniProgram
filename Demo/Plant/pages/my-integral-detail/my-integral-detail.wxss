@@ -1,0 +1,70 @@
+/* pages/my-integral-detail/my-integral-detail.wxss */
+@import "/common/base.wxss";
+
+.h1-txt{
+  font-size: 36rpx;
+  font-weight: 600;
+  background: #ffffff;
+  height: 80rpx;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 25rpx;
+  border-bottom: 4rpx solid #5f0707;
+}
+
+
+.tab-nav{
+  background: #ffffff;
+  font-size: 30rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.nav-01{
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 2rpx solid #ffffff;
+}
+.nav-01.current{
+  color: #790909;
+  border-bottom: 2rpx solid #790909;
+  height: 100%;
+}
+
+.content{
+  margin-top: 15rpx;
+}
+.moth{
+  height: 80rpx;
+  display: flex;
+  align-items: flex-start;
+  padding: 0rpx 25rpx;
+  background: #fdf4f4;
+}
+.nav-001{
+  height: 120rpx;
+  border-bottom: 1rpx solid #dad7d7;
+  background: #ffffff;
+  padding: 0rpx 25rpx;
+}
+.nav-001:last-of-type{
+  border-bottom: 1rpx solid #ffffff;
+}
+.infor-list{
+  max-width: 90%;
+  align-items: flex-start;
+}
+.name-txt{
+  font-size: 30rpx;
+  color: #666666;
+}
+.time-txt{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #999999;
+}

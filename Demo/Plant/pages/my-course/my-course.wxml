@@ -1,0 +1,60 @@
+<!--pages/my-course/my-course.wxml-->
+
+<view class="container">
+  <view class="header-01 d-row j-between">
+      <view class="next-01">
+          <view class="h1-txt">今日学习</view>
+          <view class="h6-txt"><text class="s1-txt">12</text>分钟</view>
+      </view>
+      <view class="next-01">
+          <view class="h1-txt">连续学习</view>
+          <view class="h6-txt"><text class="s1-txt">3</text>天</view>
+      </view>
+      <view class="next-01">
+          <view class="h1-txt">累计学习</view>
+          <view class="h6-txt"><text class="s1-txt">2.6</text>小时</view>
+      </view>
+  </view>
+  
+  <tabCommon tabList="{{listCourse}}" bindclickTab="clickTab" />
+
+ <block  wx:if="{{tabIndex==0}}">
+     <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <view class="referral">
+                <view class="course-name d-row j-start">马老师芳香精 </view>
+                <view class="referral-infor">
+                   由知名讲师马清风讲述对精油的理解
+                </view>
+                <view class="referral-infor">
+                  2019-08-28
+                </view>
+                <view class="class-hours d-row j-between">
+                    <view>报名人数:   1669</view>  
+                    <view class="other"> 好评率:   80%</view>
+                </view>
+            </view>
+            <image src="../../images/totur-default.png" class="totur-img" />
+      </view>
+ </block>
+ <block  wx:if="{{tabIndex==1}}">
+   <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <view class="referral">
+                <view class="course-name d-row j-start">马老师芳香精 </view>
+                <view class="referral-infor">
+                  精油基础
+                </view>
+                <view class="referral-infor">
+                  2019-08-28
+                </view>
+                <view class="class-hours d-row j-between">
+                    <view>报名人数:   1669</view>  
+                    <view class="other"> 好评率:   80%</view>
+                </view>
+            </view>
+            <image src="../../images/default.png" class="totur-img" />
+      </view>
+ </block>
+
+
+
+</view>

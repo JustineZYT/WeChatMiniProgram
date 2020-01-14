@@ -1,0 +1,28 @@
+<!--pages/my-about/my-about.wxml-->
+<view class="container">
+  <view class="tel">
+        <image  class="bg-img" src="../../images/default.png" />
+        <view class="tel-phone">
+          <image class="img160" src="../../images/totur-default.png" />
+          <view class="tel-name">蜘蛛精油</view>  
+        </view>
+  </view>
+  <view class="tel-infor">
+    <view class="list-01 d-row j-start">
+        广州蜘蛛科教产业有限责任公司
+    </view>
+    <view class="list-01 d-row j-start">        
+        淘宝店铺：蜘蛛精油官方旗舰店
+    </view>
+     <view class="list-01 d-row j-start">        
+        热线电话：400-800-1896  
+    </view>
+     <view class="list-01 d-row j-start">        
+        抖音：蜘蛛爱美丽
+    </view>
+    <view class="list-01 d-row j-start">        
+        微博：蜘蛛爱美丽
+    </view>    
+  </view>
+
+</view>

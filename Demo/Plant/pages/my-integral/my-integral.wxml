@@ -1,0 +1,42 @@
+<!--pages/my-integral/my-integral.wxml-->
+<view class="container">
+    <view class="h1-txt">你的可用积分:92</view>
+    <view class="btn-list d-row j-between">
+      <view class="btn-infor" bindtap="goDetail">明 细  ></view>
+      <view class="btn-qd">签 到</view>
+    </view>
+
+    <view class="content d-row j-start">
+        <view class="nyr-01 d-column j-start">
+            <view class="img-more">
+                <image src="../../images/default.png" class="totur-img" />
+            </view>
+            <view class="d-column j-start w100">
+                <view class="txt-01 w100">马老师的芳香警告</view>
+                <view class="mark w100">课时:17</view>
+                <view class="price w100 d-row j-between"><text class="h6-txt-01">25积分</text><text t class="h6-txt-02">$24.0</text></view>
+            </view>
+         </view>
+         <view class="nyr-01 d-column j-start">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+            </view>
+             <view class="d-column j-start w100">
+                <view class="txt-01 w100">马老师的芳香警告</view>
+                <view class="mark w100">课时:17</view>
+                <view class="price w100 d-row j-between"><text class="h6-txt-01">25积分</text><text t class="h6-txt-02">$24.0</text></view>
+            </view>
+         </view>
+         <view class="nyr-01 d-column j-start">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+            </view>
+             <view class="d-column j-start w100">
+                <view class="txt-01 w100">马老师的芳香警告</view>
+                <view class="mark w100">课时:17</view>
+                <view class="price w100 d-row j-between"><text class="h6-txt-01">25积分</text><text t class="h6-txt-02">$24.0</text></view>
+            </view>
+         </view>
+    </view>
+
+</view>

@@ -1,0 +1,223 @@
+<!--index.wxml-->
+<view class="container"> 
+
+    <view class="m-swiper">
+       <swiper class="swiper-banner" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" indicator-dots="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}" >
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" mode="scaleToFill" style="height:340rpx;"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+     <view class="search" bindtap="goSearch">
+          <view class="search-input">
+              <text>请输入搜索内容</text>
+          </view>
+          <view class="search-icon">
+              <icon type="search" size="24" color="" />
+          </view>
+    </view>
+
+
+    <view class="list-nav">
+        <view class="nav-title d-row j-start">
+          <view class="title-txt">花香木调</view>
+           <view class="more" catchtap="goSniff">查看更多 >></view>
+        </view>
+
+       <view class="nav-tab d-row j-between">
+              <view class="img-list"  catchtap="goSniffDetail">
+                <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+                <view class="keshu">
+                      <view class="icon-img-01"></view>
+                      <view class="name">香草调</view>
+                      <view>HERB</view>
+                </view>
+              </view>
+              <view class="img-list" catchtap="test0">
+                <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+                <view class="keshu">
+                      <view class="icon-img-01"></view>
+                      <view class="name">花香调</view>
+                      <view>FLORAL</view>
+                </view>
+              </view>
+              <view class="img-list" catchtap="goSniffDetail">
+                <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+                <view class="keshu">
+                      <view class="icon-img-01"></view>
+                      <view class="name">果香调</view>
+                      <view>CITRUS</view>
+                </view>
+              </view>
+        </view>
+    </view>
+
+
+    <view class="list-nav">
+        <view class="nav-title d-row j-start">
+          <view class="title-txt">植物科属</view>
+          <view class="more" catchtap="goBotany">查看更多 >></view>
+        </view>
+        <view class="nav-tab d-row j-between">
+          <view class="img-list"  catchtap="goBotanyDetail">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+            <view class="keshu">
+                  <view class="icon-img-01"></view>
+                  <view class="name">栢科</view>
+                  <view>CUPRESSACEAE</view>
+            </view>
+          </view>
+          <view class="img-list" catchtap="goBotanyDetail">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+            <view class="keshu">
+                  <view class="icon-img-01"></view>
+                  <view class="name">松科</view>
+                  <view>PINACEAE</view>
+            </view>
+          </view>
+          <view class="img-list">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+            <view class="keshu">
+                  <view class="icon-img-01"></view>
+                  <view class="name">橄榄科</view>
+                  <view>BURSERACEAE</view>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <view class="list-nav">
+         <view class="nav-title d-row j-start">
+            <view class="title-txt">芳香百科</view>
+            <view class="more" catchtap="goMyNyr">查看更多 >></view>
+        </view>
+        <view class="nav-list">
+          <block wx:for="{{[0,1]}}">
+              <view class="nav-list-01 d-row j-start"  catchtap="goCyclopediaDetail">
+                <image src="../../images/default.png" mode="scaleToFill" class="img-02"/>
+                <view class="infor-txt">
+                    <view class="h3-txt"></view>
+                      <view class="h3-contxt">芳香疗法是什么?精油是什么?身体怎样吸收精油?刚接收精油对于一起都是一无所知,不晓得从何处下手吗?这章是为了刚接触的你量.......</view>
+                </view>
+              </view>
+          </block>
+        </view>
+    </view>
+
+    <view class="list-nav">
+        <view class="nav-title d-row j-start">
+          <view class="title-txt">芳香学堂</view>
+          <view class="more" catchtap="moreCourse">查看更多 >></view>
+        </view>
+        <view class="nav-tab d-row j-between">
+          <view class="img-list">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+             <view class="keshu">
+                  <view class="name">新手课程</view>
+             </view>
+          </view>
+          <view class="img-list">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+            <view class="keshu">
+                  <view class="name">进阶课程</view>
+            </view>
+          </view>
+          <view class="img-list">
+            <image src="../../images/default.png" mode="scaleToFill" class="img-01"/>
+             <view class="keshu">
+                  <view class="name">证书课程</view>
+             </view>
+          </view>
+        </view>
+    </view>
+
+    <view class="list-nav">
+         <view class="nav-title d-row j-start">
+            <view class="title-txt">名师专栏</view>
+            <view class="more" catchtap="moreTutor">查看更多 >></view>
+        </view>
+        <view class="nav-list">
+          <block wx:for="{{[0,1]}}">
+              <view class="nav-list-01 d-row j-start"  catchtap="goTutorDetail">
+                <image src="../../images/totur-default.png" mode="scaleToFill" class="img-03"/>
+                <view class="infor-txt">
+                    <view class="h3-txt">单方调导师</view>
+                    <view class="tip-txt">张志伟</view>
+                    <view class="h3-contxt">从事健康养生这块五年,在这五年里投入了大量精力研究,并获得此相.......</view>
+                </view>
+              </view>
+          </block>
+        </view>
+    </view>
+
+    <view class="list-nav m-card">
+         <view class="nav-title d-row j-start">
+            <view class="title-txt">日签</view>
+        </view>
+        <view class="nav-list m-day">
+          <image class="day-card" src="../../images/default.png" />
+          <view class="card-infor">
+              <view class="card-list">
+                  <view class="card-txt">
+                    <view class="txt-01">梦离去,身已秋</view>
+                    <view class="txt-01">淡淡心,浅浅秋</view>
+                    <view class="txt-01">只剩往事不堪回首</view>
+                    <view class="txt-01">一晃时光已入秋</view>
+                  </view>
+                  <view class="week">
+                      <view class="day-num">6</view>
+                      <view class="month">2019-09</view>
+                  </view>
+              </view>
+              <view class="share" bindtap="shareShow">分享</view>
+          </view>
+        </view>
+        <view class="m-share" hidden="{{hiddenType}}">
+            <view class="nav-list m-day share-day">
+                <image class="day-card" src="../../images/default.png" />
+                <view class="card-infor">
+                    <view class="card-list">
+                        <view class="card-txt">
+                          <view class="txt-01">梦离去,身已秋</view>
+                          <view class="txt-01">淡淡心,浅浅秋</view>
+                          <view class="txt-01">只剩往事不堪回首</view>
+                          <view class="txt-01">一晃时光已入秋</view>
+                        </view>
+                        <view class="week">
+                            <view class="day-num">6</view>
+                            <view class="month">2019-09</view>
+                        </view>
+                    </view>
+                    <view class="exchange d-row j-center"><image class="circle-img" src="../../images/icon/circulation.png" />换一张</view>
+                </view>
+                <view class="operate d-row j-between">
+                  <view class="btn-01">
+                    <image class="icon-001"  src="../../images/icon/load.png"/>
+                    <view class="btn-txt">生产分享海报</view>
+                  </view>
+                   <view class="btn-01">
+                     <image class="icon-001"  src="../../images/icon/share.png"/>
+                     <view class="btn-txt">转发好友</view>
+                  </view>
+                   <view class="btn-01">
+                     <image class="icon-001"  src="../../images/icon/icon-weichat.png"/>
+                     <view class="btn-txt">图片</view>
+                  </view>
+                </view>
+                <view class="close d-row j-center">
+                  <image bindtap="closeHidden" class="icon-colose" src="../../images/icon/close.png" />
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+
+
+
+
+</view>

@@ -1,0 +1,47 @@
+<!--pages/my-integral-detail/my-integral-detail.wxml-->
+<view class="container">
+    <view class="h1-txt">我的积分:92</view>
+
+    <view class="tab-nav">
+      <block wx:for="{{listData}}" wx:for-index="index" wx:for-item="item">
+          <view class="nav-01 {{tabIndex == index ?'current':''}}" data-index="{{index}}" bindtap="tabData">{{item}}</view>
+      </block>
+    </view>
+
+    <view class="centent">
+        <view class="moth">本月</view>
+        <view class="moth-list">
+                <view class="nav-001 d-row j-between">
+                    <view class="infor-list d-column j-start">
+                        <view class="name-txt">签到</view>
+                        <view class="time-txt">2019-08-30</view>
+                    </view>
+                    <view class="jifen-txt">+1</view>
+                </view>
+                <view class="nav-001 d-row j-between">
+                    <view class="infor-list d-column j-start">
+                        <view class="name-txt">签到</view>
+                        <view class="time-txt">2019-09-10</view>
+                    </view>
+                    <view class="jifen-txt">-11</view>
+                </view>
+        </view>
+        <view class="moth">七月</view>
+        <view class="moth-list">
+                <view class="nav-001 d-row j-between">
+                    <view class="infor-list d-column j-start">
+                        <view class="name-txt">消费(购买课程)</view>
+                        <view class="time-txt">2019-08-30</view>
+                    </view>
+                    <view class="jifen-txt">+1</view>
+                </view>
+                <view class="nav-001 d-row j-between">
+                    <view class="infor-list d-column j-start">
+                        <view class="name-txt">签到</view>
+                        <view class="time-txt">2019-09-10</view>
+                    </view>
+                    <view class="jifen-txt">+1</view>
+                </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<!-- temp/tabLayout/tabLayout.wxml -->
+<view class="parent">
+  <view class="tabLayout" wx:if="{{type===0||type===1}}">
+    <block wx:for="{{tabList}}" wx:for-item="tab" wx:for-index="i" wx:key="{{i}}">
+      <view class="tab {{selectIndex==i?'select-tab':'not-select-tab'}}" bindtap="clickTab" data-index="{{i}}">
+        <text class="{{selectIndex==i?'select-tab-text':'not-select-text'}}">{{tab}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="search"  wx:if="{{type===0||type===2}}">
+    <view>
+      <input class="search-input" placeholder="设备名称" />
+      <button class="search-btn" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap">
+        <image class="img36" src="../../img/location/sousuo.png"></image>
+        查询
+      </button>
+    </view>
+  </view>
+</view>

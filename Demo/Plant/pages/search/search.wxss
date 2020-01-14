@@ -1,0 +1,120 @@
+/* pages/search/search.wxss */
+@import "/common/base.wxss";
+
+.search {
+  width: 100%;
+  height: 100rpx;
+  flex-direction: row;
+  padding: 0 16rpx;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(156, 118, 118);
+}
+.search-icon {
+  width: 10%;
+  justify-content: center;
+  margin-left: 16rpx;
+}
+.search-input {
+  width: 85%;
+  height: 70rpx;
+  background-color: #f2f2f2;
+  border-radius: 40rpx;
+  margin-left: 16rpx;
+  align-items: flex-start;
+  justify-content: center;
+}
+.search-input input {
+  color: gray;
+  margin-left: 16rpx;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  height: 100%;
+}
+
+.more-nav-01{
+  background: #ffffff;
+  margin: 25rpx;
+  border-radius: 8rpx;
+}
+.more-name{
+  position: relative;
+  height: 220rpx;
+  width: 100%;
+}
+.more-img{
+  width: 100%;
+  height: 385rpx;
+  display: flex;
+}
+.more-img-name{
+  position: absolute;
+  top: 0;
+  padding-left: 35rpx;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 36rpx;
+  font-weight: 600;
+  background: rgba(145, 137, 137, 0.322);
+  color: #ffffff;
+  border-top-left-radius: 8rpx;
+  align-items: flex-start;
+  border-bottom-left-radius: 8rpx;
+}
+.h1-txt{
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.h6-txt{
+  font-size: 30rpx;
+  font-weight: normal;
+  margin-top: 10rpx;
+}
+
+
+
+.more-other{
+  margin: 25rpx;
+  background: #ffffff;
+}
+.other-title{
+  height: 80rpx;
+  display: flex;
+  padding: 0rpx 25rpx;
+  border-bottom: 1rpx solid #e9d6d6;
+}
+
+.list-01{
+  margin: 25rpx;
+  padding: 25rpx;
+  background: #ffffff;
+  position: relative;  
+  border: 1rpx solid #e9d6d6;
+}
+.totur-img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 8rpx;
+}
+.referral{
+  margin-right: 25rpx;
+  font-size: 30rpx;
+  flex: 1;
+}
+.course-name{
+  color: #222222;
+  font-size: 32rpx;
+  height: 60rpx;
+  line-break: 60rpx;
+}
+.class-hours{
+  color: #666666;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.referral-infor{
+  height: 50rpx;
+}

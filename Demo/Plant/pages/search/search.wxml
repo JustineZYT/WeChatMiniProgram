@@ -1,0 +1,59 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <view class="search">
+          <view class="search-input">
+              <input type="text" placeholder="请输入搜索内容" />
+          </view>
+          <view class="search-icon">
+              <icon type="search" size="24" color="" />
+          </view>
+    </view>
+    
+     <tabCommon tabList="{{listData}}" bindclickTab="clickTab" />
+
+    <view class="more-list">
+          <block wx:for="{{[0]}}">
+              <view class="more-nav-01 d-row j-start">
+                  <view class="more-name">
+                    <image class="more-img" src="../../images/default.png" />
+                    <view class="more-img-name">
+                      <view class="h1-txt">玫瑰草精油</view>
+                      <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                    </view>
+                  </view>
+              </view>
+              <view class="more-nav-01 d-row j-start">
+                  <view class="more-name">
+                    <image class="more-img" src="../../images/default.png" />
+                    <view class="more-img-name">
+                      <view class="h1-txt">白松香精油</view>
+                      <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                    </view>
+                  </view>
+              </view>
+          </block>
+    </view>
+
+    <view  class="more-other">
+        <view class="other-title d-row j-between">
+            <view class="h2-txt">视频</view>
+            <view class="more-txt">更多 >></view>
+        </view>
+        <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <view class="referral d-column j-start">
+                <view class="course-name w100">马老师芳香精 </view>
+                <view class="referral-infor  w100">
+                   由知名讲师马清风讲述对...
+                </view>
+                <view class="referral-infor  w100">
+                  2019-08-28
+                </view>
+                <view class="class-hours w100">
+                    <view>报名人数:   1669</view>  
+                </view>
+            </view>
+            <image src="../../images/totur-default.png" class="totur-img" />
+      </view>
+    </view>
+
+</view>

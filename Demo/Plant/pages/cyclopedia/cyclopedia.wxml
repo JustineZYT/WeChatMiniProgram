@@ -1,0 +1,43 @@
+<!--pages/cyclopedia/cyclopedia.wxml-->
+<view class="container">
+    <view class="list-001">
+        <view class="h-txt">基础知识</view>
+        <view class="list-01">
+            <view class="referral">
+                <view class="class-hours">芳香疗法是什么？精油是什么？身体怎样吸收精油？刚接触精油对于一切都一无所知，不晓得从何处下手吗？这章是为刚接触精油的你量身定制的，透过一切基础 的问题建立基本的概念,再从后续各文章深入，让你轻松上手芳疗领域。</view>  
+            </view>
+        </view>
+    </view>
+    <view class="cyclopedia-01">
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            1.芳香疗法是什么？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            2.芳香疗法和传统医学有什么关系？ 
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+          3.芳香疗法的历史有多久？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            4.芳香疗法的按摩是什么？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            5.精油是什么？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            6.精油是怎样被制造出来的？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+           7.身体是怎样吸收精油？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+            8.如何使用精油？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+           9.精油的吸收速度和频率有什么关系？
+        </view>
+        <view class="cyc-list" bindtap="goCyclopediaDetail">
+           10.精油如何在体内代谢？
+        </view>
+    </view>
+</view>

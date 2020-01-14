@@ -1,0 +1,39 @@
+/* pages/sniff/sniff.wxss */
+@import "/common/base.wxss";
+
+
+.sniff-nav-01{
+  background: #ffffff;
+  margin: 25rpx;
+  border-radius: 8rpx;
+}
+.sniff-name{
+  position: relative;
+}
+.sniff-img{
+  width: 280rpx;
+  height: 220rpx;
+  display: flex;
+
+}
+.sniff-img-name{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 36rpx;
+  font-weight: 600;
+  background: rgba(102, 102, 102, 0.473);
+  color: #ffffff;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+.sniff-infor-txt{
+  line-height: 55rpx;
+  font-size: 28rpx;
+  color: #666666;
+  flex: 2;
+  height: 220rpx;
+  padding:0rpx 25rpx;
+}

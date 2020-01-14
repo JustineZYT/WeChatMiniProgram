@@ -1,0 +1,65 @@
+/* pages/tutor-list/tutor-list.wxss */
+@import "/common/base.wxss";
+
+
+.course-list{
+  margin: 25rpx;
+  margin-bottom: 0rpx;
+  margin-top: 0rpx;
+}
+.nav-title{
+  background: #ffffff;
+  margin: 0rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  padding: 0rpx 15rpx 0rpx 0rpx;
+  align-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid #790909;
+  color: #666666;
+  position: relative;
+}
+.title-txt{
+  font-size:30rpx;
+  color: #222222;
+  width: 160rpx;
+  text-align: center;
+}
+.list-01{
+  margin: 25rpx 0rpx;
+  padding: 25rpx;
+  background: #ffffff;
+  position: relative;  
+}
+.totur-img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 8rpx;
+}
+.referral{
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  flex: 1;
+}
+.course-name{
+  color: #222222;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.class-hours{
+  color: #666666;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.referral-infor{
+  line-height: 35rpx;
+}
+.people{
+  color: #999999;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.name{
+  margin-left:15rpx;
+  color:#787878;
+}

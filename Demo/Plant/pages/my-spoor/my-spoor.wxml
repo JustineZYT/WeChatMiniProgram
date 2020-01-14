@@ -1,0 +1,23 @@
+<!--pages/my-spoor/my-spoor.wxml-->
+<view class="container">
+  <view class='weui-cell-third'>
+    <view class="page__title d-row j-between">
+      今天
+      <image class='page-image' src="../../images/icon/icon-delete.png" />
+    </view>
+    <block wx:for="{{axis}}" wx:key="*this">
+        <view class='weui-cell-list'>
+          <view class='weui-cell-circle'>{{item.tras}}</view>
+          <view class='weui-cell-line d-row j-start'>
+          <view class='weui-cell-time'><image class="img-totur" src="{{item.url}}" /></view>
+          <view class="weui-cell-base">
+            <view class='weui-cell-name'>{{item.name}}</view>
+            <view class='weui-cell-event'>{{item.price}}元</view>
+          </view>
+          </view>
+        </view>
+    </block>
+  </view>
+
+
+</view>

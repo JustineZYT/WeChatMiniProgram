@@ -1,0 +1,65 @@
+/* pages/my-shopping/my-shopping.wxss */
+@import "/common/base.wxss";
+
+
+
+
+
+
+.list-001{
+  margin: 25rpx;
+}
+.h-txt{
+  height: 80rpx;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  color: #444444;
+  background: #ffffff;
+  border-bottom: 1rpx solid #9f9f9f;
+}
+.list-01{
+  padding: 25rpx;
+  background: #ffffff;
+  position: relative;  
+  padding-bottom: 0rpx;
+}
+.course-img{
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+}
+.referral{
+  margin-left: 25rpx;
+  font-size: 30rpx;
+}
+.course-name{
+  color: #222222;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.class-hours{
+  color: #666666;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.people{
+  color: #999999;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.course-price{
+  color: #ac0202;
+  height: 80rpx;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: center;
+  padding-right: 25rpx;
+  font-size: 40rpx;
+  background: #ffffff;
+  text-align: right;
+}

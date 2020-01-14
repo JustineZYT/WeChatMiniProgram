@@ -1,0 +1,92 @@
+/* pages/oil-detail/oil-detail.wxss */
+@import "/common/base.wxss";
+
+
+
+.adver{
+  position: relative;
+}
+.img-ad{
+  height: 315rpx;
+  width: 100%;
+}
+.botany-name{
+  width: 100%;
+  background: rgb(248, 237, 237);
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  text-align: left;
+  align-content: flex-start;
+  padding: 30rpx;
+}
+.botany-name view{
+  width: 100%;
+}
+.data-name{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: rgb(172, 172, 172)
+}
+.flower-name{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.flower-englist-name{
+  font-size: 32rpx;
+  color: rgb(172, 172, 172);
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.introduce{
+  background: #ffffff;
+  margin: 25rpx;
+  padding: 25rpx;
+}
+.introduce-title{
+  font-size: 30rpx;
+  font-weight: 600;
+  color: rgb(172, 172, 172);
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.english-name{
+  font-size: 32rpx;
+  color: rgb(172, 172, 172);
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.introduce-content{
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #333333;
+  padding-bottom: 15rpx;
+}
+.solid-bottom{
+  border-bottom: 1rpx solid rgb(223, 220, 220)
+}
+.list-infor {
+  padding: 15rpx 0rpx;
+  line-height: 60rpx;
+}
+.nav-01{
+  flex: 1;
+  padding-left: 15rpx;
+}
+.list-02{
+  color: rgb(172, 172, 172);
+}
+.qg-img{
+  width: 64rpx;
+  height: 64rpx;
+}
+.txt-infor{
+  margin-left: 25rpx;
+}
+.txt-001{
+  color: red;
+  font-weight: 600
+}

@@ -1,0 +1,32 @@
+<!--pages/bussback/bussback.wxml-->
+<view class="container">
+   <view class="creat-order">
+        <view class="list-01 d-row j-start">
+          <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected">
+              <text>{{array[index]}}</text>
+          </picker>
+        </view>      
+        <view class="list-01 d-column j-start">
+            <input type="text" placeholder="请填写手机号与你联系" />
+        </view>      
+        <view class="list-type d-column j-start">
+              <textarea class="text-area" placeholder="情况描述实时情况" placeholder-class="textarea-placeholder"></textarea>
+              <view class="tip-txt w100"> 0/500</view>
+        </view>
+        <view class="phone">
+          <view class="phone-txt">上传照片 (最多四张)</view>
+          <view class="btn-phone">
+              <view class="list-phone">
+                  <image class="add-img" src="../../images/add.png" />
+              </view>
+          </view>
+        </view>
+
+
+         <button class="deal-button" bindtap="onSubmit" >
+                提交
+        </button> 
+    </view>
+
+
+</view>

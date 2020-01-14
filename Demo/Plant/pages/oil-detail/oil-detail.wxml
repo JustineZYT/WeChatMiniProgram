@@ -1,0 +1,100 @@
+<!--pages/oil-detail/oil-detail.wxml-->
+<view class="container">
+      <view class="adver">
+        <image src="../../images/default-01.png"  class="img-ad"/>
+        <view class="botany-name">
+            <view class="data-name">单方精油资料库</view>
+            <view class="flower-name">波维尼花原精油</view>
+            <view class="flower-englist-name">FLORAI</view>
+          </view>
+        </view>
+        <view class="introduce">
+          <view class="introduce-title">
+            植物描述
+          </view>
+          <!-- <view class="english-name">Floral related essential oil</view> -->
+          <view class="introduce-content solid-bottom">
+              一種多年生常綠的灌木植物。株植高約0.5-1
+              米’分支濃密結實·葉子蒽綠’針狀線形;花
+              小杯形成串;花瓣有四瓣外為紅深褐色’瓣
+              內呈為黃色:香味濃郁。
+          </view>
+          <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">提取方法</view>
+                <view class="bold-txt">溶剂萃取法</view>
+            </view>
+            <view class="nav-01">
+                 <view class="list-02">植物科属</view>
+                 <view class="bold-txt">芸香科</view>
+            </view>
+          </view>
+          <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">挥发性 </view>
+                <view class="bold-txt">高音</view>
+            </view>
+            <view class="nav-01">
+                 <view class="list-02">提取部分</view>
+                 <view class="bold-txt">花朵</view>
+            </view>
+          </view>
+          <view class="list-infor d-row j-start solid-bottom">
+               <view class="nav-01">
+                    <view class="list-02">精油原理 </view>
+                    <view class="bold-txt d-row j-start mb15">
+                      <image class="qg-img" src="../../images/icon/icon-dn.png" />
+                      <view class="txt-infor">
+                          <view class="txt-001">神经系统</view>
+                          <view class="txt-002">提升自信,容易融入新环境,提升认同感</view>
+                      </view>
+                    </view>
+                    <view class="bold-txt d-row j-start mb15">
+                      <image class="qg-img" src="../../images/icon/icon-wb.png" />
+                      <view class="txt-infor">
+                          <view class="txt-001">消化系统</view>
+                          <view class="txt-002">肠胃炎,腹泻,溃疡,呕吐,胀气</view>
+                      </view>
+                    </view>
+                    <view class="bold-txt d-row j-start">
+                      <image class="qg-img" src="../../images/icon/icon-fb.png" />
+                      <view class="txt-infor">
+                          <view class="txt-001">呼吸系统</view>
+                          <view class="txt-002">气喘,肺汽肿</view>
+                      </view>
+                    </view>
+                </view>
+          </view>
+
+          <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">常见产地 </view>
+                <view class="bold-txt">摩洛哥,土耳其</view>
+            </view>
+          </view>
+           <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">化学成份 </view>
+                <view class="bold-txt">倍半丙烯(母局花懒),</view>
+            </view>
+          </view>
+          
+          <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">注意事项 </view>
+                <view class="bold-txt">精油谨慎外用,涂抹范围需远离眼睛和粘膜</view>
+            </view>
+          </view>
+          <view class="list-infor d-row j-start solid-bottom">
+            <view class="nav-01">
+                <view class="list-02">温馨提示 </view>
+                <view class="bold-txt">幼儿,小孩,孕妇及初接触精油人士,用于皮肤上前请用植物油稀释精油后才使用</view>
+            </view>
+          </view>
+        </view>
+
+
+
+
+
+</view>

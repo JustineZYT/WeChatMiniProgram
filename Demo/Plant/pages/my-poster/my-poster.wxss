@@ -1,0 +1,171 @@
+/* pages/my-poster/my-poster.wxss */
+@import "/common/base.wxss";
+page{
+  background: #eeeefd;
+  height: 100%;
+}
+.container{
+  background: #eeeefd;
+}
+
+.list-nav{
+  background: #ffffff;
+  margin: 60rpx;
+  padding: 25rpx;
+}
+.m-card{
+  position: relative;
+}
+.m-day{
+  /* margin: 45rpx; */
+  background: #ffffff;
+  position: relative;
+}
+.day-card{
+  border-radius: 8rpx;
+  width: 100%;
+  height: 380rpx;
+  border: 3rpx solid #ffffff;
+}
+.exchange{
+  color: #f56a0c;
+  display: flex;
+  margin-left: auto;
+  margin-right: 25rpx;
+  width: 150rpx;
+}
+.circle-img{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.card-infor{
+  position: absolute;
+  height: 380rpx;
+  border-radius: 8rpx;
+  width: 100%;
+  background: rgba(150, 149, 149, 0.4);
+  top: 0;
+}
+.card-list{
+  height: 100%;
+  display: flex;
+  width: 70%;
+}
+.right{
+  height: 100%;
+  justify-content: flex-between;
+}
+.card-txt{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: auto;
+}
+.week{
+  height: 120rpx;
+  width: 100rpx;
+  background: #cccccc;
+  color: #111111;
+  margin-top: 10rpx;
+  margin-bottom: auto;
+  display: flex;
+  border-radius: 8rpx;
+}
+.txt-01{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 34rpx;
+}
+.day-num{
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #444444;
+}
+
+.content{
+  margin-top: 20rpx;
+  height: 300rpx;
+  position: relative;
+  padding-top: 60rpx;
+}
+.base-self{
+  background: #ffffff;
+  border: 1rpx solid #efefef; 
+  position: relative;
+  height: 200rpx;
+}
+.img-nick{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 20rpx;
+}
+.base-self{
+  height: 180rpx;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 25rpx;
+}
+.nike-name{
+  font-size: 26rpx;
+  color: #666666;
+}
+.num-warm{
+  font-style: italic;
+  color: #f56a0c;
+  font-size: 30rpx;
+  margin: 0rpx 8rpx;
+}
+.tip-txt{
+  font-size: 26rpx;
+  color: #999999;
+}
+.save-btn{
+  margin: 15rx 45rpx;
+  background: #f56a0c;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  height: 80rpx;
+  display: flex;
+}
+.tip-txt{
+  /* margin: 0rpx 45rpx; */
+  text-align: center;
+}
+.save-btn{
+  /* margin: 0rpx 45rpx; */
+  border-radius: 8rpx;
+  margin-top: 15rpx;
+}
+/* 
+.share{
+  width: 160rpx;
+  height: 50rpx;
+  background: rgba(255, 255, 255, 0.473);
+  color: #ffffff;
+  font-size: 27rpx;
+  display: flex;
+  margin-left: auto;
+  margin-right: 25rpx;
+  border-radius: 8rpx;
+}
+.operate{
+  background: #ffffff;
+  height: 120rpx;
+  border-bottom: 1rpx solid #9999;
+} */

@@ -1,0 +1,6 @@
+<!--comComponent/tabCommon/tabCommon.wxml-->
+<view class="tab-nav">
+      <block wx:for="{{tabList}}" wx:for-index="i" wx:for-item="item" wx:key="{{i}}">
+          <view class="nav-01 {{tabIndex == i ?'current':''}}" data-index="{{i}}" bindtap="tabDetail">{{item}}</view>
+      </block>
+  </view>

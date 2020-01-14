@@ -1,0 +1,53 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>pages/mine/mine.wxml</text> -->
+<view class="container">
+  <view class="bg">
+        <view class="self-infor d-row j-between">
+          <image class="img-self" src="../../images/totur-default.png" />
+          <view class="base-list d-column j-start ml15">
+              <view class="nav-01 d-row j-between w100">
+                <view class="like">名叫朱</view>
+                <view class="edite" bindtap="goMessage"><image class="img-edite" src="../../images/icon/review.png" /></view>               
+              </view>
+              <view class="other-base d-row j-between  w100">
+                 <view class="jifen" bindtap="goMyIntegral">我的积分: 293</view>
+
+              </view>
+          </view>
+        </view>
+  </view>
+
+  <view class="my-function">
+    <!-- <view class="title-01">我的功能</view> -->
+    <view class="f-list d-row j-between">
+      <block wx:for="{{listData}}">
+        <view class="list-01" bindtap="goInterface" data-path='{{item.url}}'>  
+            <image class="img128" src="{{item.img}}" />
+            <view class="f-name">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="list-funtion d-row j-start">
+        <view class="qiandao" bindtap="goSign" data-type="1">{{signType == 0 ? "签到 ":"  已签到 "}}</view>
+        <view>{{signType=="1" ? "每周累计签到5天，可领取1份微课":"本周累计签到N天"}}</view>
+  </view>
+  <view class="ad-banner">
+    <image class="img-banner" src="../../images/mine/banner.png" />
+  </view>
+
+
+<view class="more-function">
+    <!-- <view class="title-01">其他功能</view> -->
+    <view class="f-list d-row j-between">
+      <block wx:for="{{arrData}}">
+           <view class="list-01" bindtap="goOtherInterface" data-path='{{item.url}}'>  
+              <image class="img64" src="{{item.img}}" />
+              <view class="f-name">{{item.name}}</view>
+          </view>
+      </block>
+    </view>
+  </view>
+
+
+</view>

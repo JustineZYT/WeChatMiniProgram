@@ -1,0 +1,19 @@
+<!--pages/botany/botany.wxml-->
+<view class="container">
+
+    <view class="oil-list">
+      <block wx:for="{{listData}}">
+          <view class="oil-nav-01 d-row j-start" bindtap="goBotanyDetail">
+              <view class="oil-name">
+                <image class="oil-img" src="{{item.url}}" />
+                <view class="oil-img-name">
+                  <view class="h1-txt">{{item.name}}</view>
+                  <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                </view>
+              </view>
+          </view>
+      </block>
+    </view>
+
+
+</view>

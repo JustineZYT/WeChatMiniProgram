@@ -1,0 +1,57 @@
+/* pages/my-spoor/my-spoor.wxss */
+@import "/common/base.wxss";
+
+.page__title {
+  padding: 8rpx 25rpx;
+  background: #fff;
+}
+
+.weui-cell-third {
+  margin: 25rpx;
+}
+.weui-cell-list {
+  margin: 10px 0rpx;
+  position: relative;
+}
+.weui-cell-line {
+  height: 100px;
+  background: #fff;
+  margin-right: 100rpx;
+  padding-left: 20rpx;
+}
+.weui-cell-circle {
+  border: 1px solid #999999;
+  border-radius: 90rpx;
+  width: 70rpx;
+  height: 100%;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  font-size: 30rpx;
+  padding: 0rpx 10rpx;
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+.weui-cell-base{
+  flex: 2;
+}
+.weui-cell-event {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.weui-cell-name {
+  font-size: 14px;
+  height: 23px;
+  padding-left: 15px;
+}
+.page-image {
+  width: 64rpx;
+  height: 64rpx;
+}
+.img-totur{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+}

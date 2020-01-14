@@ -1,0 +1,65 @@
+@import "../../common/base.wxss";
+
+.parent{
+  width:100%;
+  /* min-height:90rpx; */
+  flex-direction:column;
+  background:white;
+  margin-left:auto;
+  margin-right:auto;
+}
+.tabLayout{
+  width: 100%;
+  flex-direction: row;
+  flex: 2;
+  display: flex;
+}
+.tab{
+  flex-direction: column;
+  flex: 1;
+  font-size: 30rpx;
+  height:80rpx;
+  display: flex;
+}
+.select-tab{
+border-bottom: 4rpx solid #0094ff;
+}
+.not-select-tab{
+  border-bottom: 4rpx solid #ffffff;
+}
+.select-tab-text{
+  color: #0094ff
+}
+.not-select-text{
+  color: #80464444;  
+}
+.search{
+  width: 100%;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  height:90rpx;
+}
+.search>view{
+  width: 95%;
+  height: 60%;
+  border: 2rpx solid #0094ff;
+  flex-direction: row;
+  border-radius:8rpx;
+}
+.search-input{
+  flex: 5;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.search-btn{
+  height: 100%;
+  flex: 1;
+  border-radius: 0;
+  background-color: #0094ff;
+  color: white;
+  font-size: 26rpx;
+}
+.search-btn .img36{
+    margin-right: 10rpx;
+}

@@ -1,0 +1,38 @@
+<!--pages/my-poster/my-poster.wxml-->
+<view class="container">
+    <view class="list-nav m-card">
+        <view class="nav-list m-day">
+          <image class="day-card" src="../../images/default.png" />
+          <view class="card-infor d-row j-between">
+              <view class="card-list">
+                  <view class="card-txt">
+                    <view class="txt-01">梦离去,身已秋</view>
+                    <view class="txt-01">淡淡心,浅浅秋</view>
+                    <view class="txt-01">只剩往事不堪回首</view>
+                    <view class="txt-01">一晃时光已入秋</view>
+                  </view>
+                  
+              </view>
+              <view class="right d-column">
+                  <view class="week">
+                      <view class="day-num">6</view>
+                      <view class="month">2019-09</view>
+                  </view>
+                  <view class="exchange d-row j-center"><image class="circle-img" src="../../images/icon/circulation.png" />换一张</view>
+              </view>              
+          </view>
+        </view>
+        <view class="content">           
+            <view class="base-self">
+              <view class="nike-name">爱睡觉的小七</view>
+              <view class="do-card">已经打卡<text class="num-warm">0</text>天</view>
+            </view>
+             <image src="../../images/totur-default.png" class="img-nick" />
+        </view>
+        <view class="tip-txt">保存图片到手机相册,然后发给朋友吧</view>
+
+        <view class="save-btn">保存相册</view>
+    </view>
+
+
+</view>

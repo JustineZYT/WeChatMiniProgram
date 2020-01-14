@@ -1,0 +1,16 @@
+<!--pages/sniff/sniff.wxml-->
+<view class="container">
+    <view class="sniff-list">
+      <block wx:for="{{flowerList}}">
+          <view class="sniff-nav-01 d-row j-start" bindtap="goSniffDetail">
+              <view class="sniff-name">
+                <image class="sniff-img" src="../../images/default.png" />
+                <view class="sniff-img-name">{{item.name}}</view>
+              </view>
+              <view class="sniff-infor-txt">
+                主要是从花朵中萃取出来的精油，部分是从叶子或茎取出来。温暖的香气，能起到鼓舞、唤醒的效果，.......
+              </view>
+          </view>
+      </block>
+    </view>
+</view>

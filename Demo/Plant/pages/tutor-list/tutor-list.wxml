@@ -1,0 +1,61 @@
+<!--pages/tutor-list/tutor-list.wxml-->
+<view class="container">
+    <view class="course-list">   
+        <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <image src="../../images/totur-default.png" class="totur-img" />
+            <view class="referral">
+                <view class="course-name d-row j-start">单芳调导师   <view class="name">张志伟</view></view>
+                <view class="referral-infor">
+                   Frank老师来自台湾,是在芳疗领域有超过20年从业经验的
+                    芳疗大师......
+                </view>
+                <view class="class-hours d-row j-between">
+                    <view>课时:12</view>  
+                    <view class="other d-row j-start">
+                        <view>点赞数:   1668</view>
+                        <view class="ml15">收藏数:   1668</view>
+                    </view>
+                </view>
+                <view class="people">感兴趣人数:   1669</view>
+            </view>
+            <view class="course-price"></view>
+        </view>
+        <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <image src="../../images/totur-default.png" class="totur-img" />
+            <view class="referral">
+                <view class="course-name d-row j-start">单芳调高级导师 <view class="name">张伟</view></view>
+                <view class="referral-infor">
+                   Frank老师来自台湾,是在芳疗领域有超过20年从业经验的
+                    芳疗大......
+                </view>
+                <view class="class-hours d-row j-between">
+                    <view>课时:12</view>  
+                    <view class="other d-row j-start">
+                        <view>点赞数:   1668</view>
+                        <view class="ml15">收藏数:   1668</view>
+                    </view>
+                </view>
+                <view class="people">感兴趣人数:   1668</view>
+            </view>
+        </view>
+        <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+            <image src="../../images/totur-default.png" class="totur-img" />
+            <view class="referral">
+                <view class="course-name d-row j-start">单芳调高级导师 <view class="name">张志</view></view>
+                <view class="referral-infor">
+                   Frank老师来自台湾,是在芳疗领域有超过20年从业经验的
+                    芳疗大师......
+                </view>
+                <view class="class-hours d-row j-between">
+                    <view>课时:12</view>  
+                    <view class="other d-row j-start">
+                        <view>点赞数:   1668</view>
+                        <view class="ml15">收藏数:   1668</view>
+                    </view>
+                </view>
+                <view class="people">感兴趣人数:   3999</view>
+            </view>
+        </view>
+    </view>
+
+</view>

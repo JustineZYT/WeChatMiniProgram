@@ -1,0 +1,64 @@
+<!--pages/tutor/tutor.wxml导师详情-->
+<view class="container">
+  <tabCommon tabList="{{listInfor}}" bindclickTab="clickTab" />
+  <view class="content">
+      <block  wx:if="{{tabIndex==0}}">
+          <view class="infor-menu">
+            <view>导师介绍</view>
+            <view>洪黎明</view>
+            <view>洪立明 Frank老师,你的香氛顾问
+              Frank老师来自台湾,是在芳疗领域有超过20年从业经验的
+              芳疗大师。对于气味, Frank老师相当敏感,似乎拥有天生的
+              辨香才前,甚至能分辨入工和天然的香味。正因如此, Frank
+              老师才能做到对各种精油的特性和香气了如指掌,能够根据
+              不同需求调配处不同的香气。不同的香氛有迥异的性格,赋
+              予人多样的气质;不同的女性在不同的场合,匹配特定的香
+              氛。在芳香美活, Frank老师将深度剖析有机芳香产品的调配
+              和使用方法,解析女人、香氛、场景之间的搭配技巧。成为
+              你的香气顾问。
+            </view>
+            <view>※擅长芳香植物形态学、化学、精油调香</view>
+            <view>柏檀培训学院主讲讲师</view>
+            <view>肯梦学院芳香疗法概论讲师</view>
+            <view>英国FPA认证导师</view>
+            <view>多家知名品牌调香顾问</view>
+            <view>《精油化学》《明式调香》等书的作者</view>
+        </view>
+
+      </block>
+      <block  wx:if="{{tabIndex==1}}">
+          <view class="course-list">   
+            <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+                <image src="../../images/default.png" class="course-img" />
+                <view class="referral">
+                    <view class="course-name">果香调课程初级</view>
+                    <view class="class-hours">课时:18 </view>
+                    <view class="people">感兴趣人数:   1669</view>
+                </view>
+                <view class="course-price"></view>
+            </view>
+            <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+                <image src="../../images/default.png" class="course-img" />
+                <view class="referral">
+                    <view class="course-name">果香调课程中级</view>
+                    <view class="class-hours">课时:12 </view>
+                    <view class="people">感兴趣人数:   1668</view>
+                </view>
+                <view class="course-price">￥ 366</view>
+            </view>
+            <view class="list-01 d-row j-start" bindtap="goCourseDetail">
+                <image src="../../images/default.png" class="course-img" />
+                <view class="referral">
+                    <view class="course-name">果香调课程高级</view>
+                    <view class="class-hours">课时:5 </view>
+                    <view class="people">感兴趣人数:   3999</view>
+                </view>
+                <view class="course-price">￥ 188</view>
+            </view>
+        </view>
+
+      </block>
+  </view>
+
+
+</view>

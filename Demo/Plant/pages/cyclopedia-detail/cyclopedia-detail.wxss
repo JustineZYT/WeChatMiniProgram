@@ -1,0 +1,70 @@
+/* pages/cyclopedia-detail/cyclopedia-detail.wxss */
+@import "/common/base.wxss";
+
+.list-001{
+  margin: 25rpx;
+}
+.h-txt{
+  height: 80rpx;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  color: #444444;
+  background: #ffffff;
+  border-bottom: 1rpx solid #9f9f9f;
+}
+.list-01{
+  padding: 25rpx;
+  background: #ffffff;
+}
+.referral{
+  font-size: 30rpx;
+}
+.class-hours{
+  color: #666666;
+  line-height: 50rpx;
+}
+.cyclopedia-01{
+  margin: 25rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #efeffe;
+  color: #444444;
+  box-shadow:0 0 2px #000;
+}
+.cyc-list{
+  height: 80rpx;
+  display: flex;
+  width: 100%;
+  text-align: right;
+  align-items: flex-start;
+  border-bottom: 1rpx solid #9f9f9f;
+  background: #ffffff;
+  padding:0rpx 15rpx;
+}
+.cyc-list:last-of-type{
+  border-bottom: none;
+}
+
+.compare-title{
+  margin: 25rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #efeffe;
+  color: #444444;
+  box-shadow:0 0 2px #000;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  text-align: right;
+  align-content: center;
+  background: #ffffff;
+  padding:0rpx 15rpx;
+}
+.solid{
+  height: 40%;
+  margin-right: 15rpx;
+  width: 3rpx;
+  background: #07bae7;
+  border: 1rpx solid #07bae7;  
+}

@@ -1,0 +1,46 @@
+<!--pages/my-collect/my-collect.wxml-->
+<view class="container">     
+    <tabCommon tabList="{{listCollect}}" bindclickTab="clickTab" />
+
+    <view class="empty">
+        <view class="empty-txt">清空记录</view>
+    </view>
+    <view class="collect-content d-row j-start">
+          <view class="infor-list">
+                <image class="img-default" src="../../images/totur-default.png" />
+                <view class="name">马老师的芳精</view>
+                <view class="other d-row j-between">
+                  <view class="course-tiem">课时:17</view>
+                  <view class="collect-img"><image class="img48" src="../../images/icon/icon-a-sc.png" /></view>
+                </view>
+            </view>
+            <view class="infor-list">
+                <image class="img-default" src="../../images/totur-default.png" />
+                <view class="name">马老师的芳精</view>
+                <view class="other d-row j-between">
+                  <view class="course-tiem">课时:17</view>
+                  <view class="collect-img"><image class="img48" src="../../images/icon/icon-a-sc.png" /></view>
+                </view>
+            </view>
+            <view class="infor-list">
+                <image class="img-default" src="../../images/totur-default.png" />
+                <view class="name">马老师的芳精</view>
+                <view class="other d-row j-between">
+                  <view class="course-tiem">课时:17</view>
+                  <view class="collect-img"><image class="img48" src="../../images/icon/icon-d-sc.png" /></view>
+                </view>
+            </view>
+            <view class="infor-list">
+                <image class="img-default" src="../../images/totur-default.png" />
+                <view class="name">马老师的芳精</view>
+                <view class="other d-row j-between">
+                  <view class="course-tiem">课时:17</view>
+                  <view class="collect-img"><image class="img48" src="../../images/icon/icon-d-sc.png" /></view>
+                </view>
+            </view>
+    </view>
+    
+
+
+
+</view>

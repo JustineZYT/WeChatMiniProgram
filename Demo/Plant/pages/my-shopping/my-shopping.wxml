@@ -1,0 +1,44 @@
+<!--pages/my-shopping/my-shopping.wxml-->
+<view class="container">
+  <view class="list-001">
+      <view class="h-txt">2019-09-11  09:11:25</view>
+      <view class="list-01 d-row j-start"  bindtap="goCourseDetail">
+          <image src="../../images/totur-default.png" class="course-img" />
+          <view class="referral">
+              <view class="course-name">果香调课程</view>
+              <view class="class-hours">由知名讲师马清风讲述对精油的理解</view>
+              <view class="class-hours">共计 2个课程     12课时 </view>
+          </view>
+      </view>
+       <view class="course-price">￥ 166</view>
+  </view>
+  <view class="list-001">
+      <view class="h-txt">2019-09-11  09:11:25</view>
+      <view class="list-01 d-row j-start"  bindtap="goCourseDetail">
+          <image src="../../images/totur-default.png" class="course-img" />
+          <view class="referral">
+              <view class="course-name">果香调课程中级</view>
+              <view class="class-hours">由知名讲师马清风讲述对精油的理解</view>
+              <view class="class-hours">12  课时 </view>
+              <!-- <view class="people">感兴趣人数:   1669</view> -->
+          </view>
+      </view>
+       <view class="course-price">￥ 288</view>
+  </view>
+  <view class="list-001">
+      <view class="h-txt">2019-09-11  09:11:25</view>
+      <view class="list-01 d-row j-start"  bindtap="goCourseDetail">
+          <image src="../../images/totur-default.png" class="course-img" />
+          <view class="referral">
+              <view class="course-name">果香调课程高级</view>
+              <view class="class-hours">由知名讲师马清风讲述对精油的理解</view>
+              <view class="class-hours"> 12  课时 </view>
+          </view>
+      </view>
+       <view class="course-price">￥ 366</view>
+  </view>
+
+
+
+
+</view>

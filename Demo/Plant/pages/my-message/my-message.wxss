@@ -1,0 +1,40 @@
+/* pages/my-message/my-message.wxss */
+@import "/common/base.wxss";
+
+.time{
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #444444;
+}
+
+.message{
+  margin: 25rpx;
+  background: #ffffff;
+  border-radius: 8rpx;
+}
+.img-ad{
+  height: 400rpx;
+  width: 100%;
+}
+.message-txt{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 25rpx 15rpx;
+}
+.biaoqian-txt{
+  font-weight: 600;
+  color: #333333;
+  font-size: 36rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.message-content{
+  color: #888888;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}

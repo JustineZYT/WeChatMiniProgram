@@ -1,0 +1,37 @@
+<!--pages/oil/oil.wxml-->
+<view class="container">
+
+    <view class="oil-list">
+      <block wx:for="{{[0]}}">
+          <view class="oil-nav-01 d-row j-start" bindtap="goOil">
+              <view class="oil-name">
+                <image class="oil-img" src="../../images/default-01.png" />
+                <view class="oil-img-name">
+                  <view class="h1-txt">玫瑰草精油</view>
+                  <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                </view>
+              </view>
+          </view>
+          <view class="oil-nav-01 d-row j-start">
+              <view class="oil-name">
+                <image class="oil-img" src="../../images/default-02.png" />
+                <view class="oil-img-name">
+                  <view class="h1-txt">白松香精油</view>
+                  <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                </view>
+              </view>
+          </view>
+          <view class="oil-nav-01 d-row j-start">
+              <view class="oil-name">
+                <image class="oil-img" src="../../images/default-03.png" />
+                <view class="oil-img-name">
+                  <view class="h1-txt">芳樟精油</view>
+                  <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                </view>
+              </view>
+          </view>
+      </block>
+    </view>
+
+
+</view>

@@ -1,0 +1,58 @@
+<!--pages/my-nyr/my-nyr.wxml-->
+<view class="container">
+    <view class="content d-row j-start">
+        <view class="nyr-01 d-column j-start" bindtap="goCyclopedia">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+                <view class="more-list">
+                    <view class="h1-txt">基础知识</view>
+                    <view class="h6-more">更多>></view>
+                </view>
+            </view>
+            <view class="referral">
+                精油除了用在香薰上，还可以直接用在皮肤上，但是需要用植物油稀释？什么是植物油呢？精油还有分单复方？初入门可以选择哪一些精油？植物油是把精油用在皮肤上的良好桥梁...
+            </view>
+         </view>
+         <view class="nyr-01 d-column j-start"  bindtap="goCyclopedia">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+                <view class="more-list">
+                    <view class="h1-txt">使用小贴士</view>
+                    <view class="h6-more">更多>></view>
+                </view>
+            </view>
+            <view class="referral">
+                精油除了用在香薰上，还可以直接用在皮肤上，但是需要用植物油稀释？什么是植物油呢？精油还有分单复方？初入门可以选择哪一些精油？植物油是把精油用在皮肤上的良好桥梁...
+            </view>
+         </view>
+         <view class="nyr-01 d-column j-start"  bindtap="goCyclopedia">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+                <view class="more-list">
+                    <view class="h1-txt">芳疗护肤</view>
+                    <view class="h6-more">更多>></view>
+                </view>
+            </view>
+            <view class="referral">
+                精油除了用在香薰上，还可以直接用在皮肤上，但是需要用植物油稀释？什么是植物油呢？精油还有分单复方？初入门可以选择哪一些精油？植物油是把精油用在皮肤上的良好桥梁...
+            </view>
+         </view>
+         <view class="nyr-01 d-column j-start"  bindtap="goCyclopedia">
+            <view class="img-more">
+                <image src="../../images/totur-default.png" class="totur-img" />
+                <view class="more-list">
+                    <view class="h1-txt">芳疗护理</view>
+                    <view class="h6-more">更多>></view>
+                </view>
+            </view>
+            <view class="referral">
+                精油除了用在香薰上，还可以直接用在皮肤上，但是需要用植物油稀释？什么是植物油呢？精油还有分单复方？初入门可以选择哪一些精油？植物油是把精油用在皮肤上的良好桥梁...
+            </view>
+         </view>
+
+
+    </view>
+
+
+
+</view>

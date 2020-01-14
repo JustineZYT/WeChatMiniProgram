@@ -1,0 +1,50 @@
+/* pages/my-nyr/my-nyr.wxss */
+@import "/common/base.wxss";
+.nyr-01{
+  margin: 2.5% 2%;
+  padding: 25rpx;
+  width: 46%;
+  background: #ffffff;
+}
+.img-more{
+  position: relative;
+  height: 260rpx;
+  width: 100%;
+  position: relative;
+  border-radius: 8rpx;
+  margin-bottom: 10rpx;
+}
+.totur-img{
+  width: 100%;
+  height: 260rpx;
+  border-radius: 8rpx;
+}
+.more-list{
+  background: rgba(109, 107, 107, 0.534);
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+.more-list{
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25rpx;
+}
+.h1-txt{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #ffffff;
+}
+.h6-more{
+  margin-top: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+  color: #ffffff;
+}

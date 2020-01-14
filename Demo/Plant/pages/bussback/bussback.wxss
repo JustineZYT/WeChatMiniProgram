@@ -1,0 +1,78 @@
+/* pages/bussback/bussback.wxss */
+@import '../../common/base.wxss';
+.typeTxt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 160rpx;
+  background: red;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.list-01{
+  width: 100%;  
+  margin-bottom: 15rpx;
+  height: 80rpx;
+  background: #ffffff;
+  padding: 0rpx 25rpx;
+  /* border-bottom: 1rpx solid #9f9f9f; */
+}
+.list-01 picker,.list-01 input{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.list-type{
+  padding: 15rpx;
+}
+.text-area{
+  background: #ffffff;
+  width: 97%;
+  padding: 10rpx;
+}
+.textarea-placeholder{
+  padding: 10rpx;
+  width: 98%;
+}
+.tip-txt{
+  text-align: right;
+  color: #999999;
+}
+.phone{
+  background: #ffffff;
+  padding: 25rpx;
+}
+.list-phone{
+  width: 25%;
+  border: 1rpx dashed #e9d6d6;
+  display: flex;
+  background: #ffffff;
+}
+.phone-txt{
+  border-bottom: 1rpx solid #e9d6d6;
+  padding: 25rpx;
+}
+.btn-phone{
+  margin: 25rpx 10rpx;
+}
+.add-img{
+  width: 128rpx;
+  height: 128rpx;
+}
+
+
+.deal-button{
+    width:75%;
+    margin: 0 auto;
+    font-size: 24rpx;
+    height:80rpx;
+    background: #106af2;
+    border-radius: 45rpx;
+    border-top: 1rpx solid #106af2;
+    color: #ffffff;
+    margin-top: 20%;
+}

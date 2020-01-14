@@ -1,0 +1,93 @@
+/* pages/tutor/tutor.wxss */
+@import "/common/base.wxss";
+/* .tab-nav{
+  background: #ffffff;
+  font-size: 30rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+.nav-01{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  border-bottom: 2rpx solid #979797;
+}
+.nav-01.current{
+  color: #790909;
+  border-bottom: 2rpx solid #790909;
+} */
+
+.infor-menu{
+  background: #ffffff;
+  line-height: 50rpx;
+  padding: 25rpx
+}
+
+.course-list{
+  margin: 25rpx;
+  margin-bottom: 0rpx;
+  margin-top: 0rpx;
+}
+.nav-title{
+  background: #ffffff;
+  margin: 0rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  padding: 0rpx 15rpx 0rpx 0rpx;
+  align-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid #790909;
+  color: #666666;
+  position: relative;
+}
+.more{
+  position: absolute;
+  right: 25rpx;
+}
+.title-txt{
+  font-size:30rpx;
+  color: #222222;
+  width: 160rpx;
+  text-align: center;
+}
+.list-01{
+  margin: 25rpx 0rpx;
+  padding: 25rpx;
+  background: #ffffff;
+  position: relative;  
+}
+.course-img{
+  width: 200rpx;
+  height: 130rpx;
+  border-radius: 8rpx;
+}
+.referral{
+  margin-left: 25rpx;
+  font-size: 30rpx;
+}
+.course-name{
+  color: #222222;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.class-hours{
+  color: #666666;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.people{
+  color: #999999;
+  height: 40rpx;
+  line-break: 40rpx;
+}
+.course-price{
+  position: absolute;
+  right: 25rpx;
+  top: 35%;
+  color: #ac0202;
+  font-size: 40rpx;
+}

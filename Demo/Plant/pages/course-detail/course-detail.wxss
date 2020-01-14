@@ -1,0 +1,71 @@
+/* pages/course-detail/course-detail.wxss */
+@import "/common/base.wxss";
+
+.video-img{
+  width: 100%;
+  height: 350rpx;
+}
+.tip {
+  height: 80rpx;
+  background: #ffffff;
+  display: flex;
+  border-bottom: 1rpx solid #909099;
+  padding: 0rpx 10rpx;
+}
+.solid{
+  margin: 0rpx 10rpx;
+}
+.img48{
+  width: 48rpx;
+  height: 48rpx;
+}
+.zan-num{
+  margin-right: 15rpx;
+}
+
+
+.infor-menu{
+  background: #ffffff;
+  line-height: 50rpx;
+  padding: 25rpx
+}
+.list-course{
+  background: #ffffff;
+  padding: 25rpx;
+  border: 1rpx solid #999999;
+  margin: 25rpx;
+  border-radius: 8rpx;
+}
+.course-name{
+  margin-left: 15rpx;
+}
+.h3-title{
+  color: #111111;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 15rpx;
+}
+.record{
+  display: flex;
+  margin-left: auto;
+}
+.review{
+  position: relative;
+  min-height: 600rpx;
+}
+.review-list{
+  background: #ffffff;
+  padding: 25rpx;
+  border: 1rpx solid #999999;
+  margin: 25rpx;
+  border-radius: 8rpx;
+}
+.go-review{
+  position: absolute;
+  top: 65%;
+  right: 15rpx;
+}
+.review-img{
+  width: 65rpx;
+  height: 64rpx;
+}

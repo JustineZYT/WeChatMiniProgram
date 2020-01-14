@@ -1,0 +1,280 @@
+/**index.wxss**/
+@import "/common/base.wxss";
+
+.search {
+  width: 100%;
+  height: 100rpx;
+  flex-direction: row;
+  padding: 0 16rpx;
+  margin-bottom: 25rpx;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(156, 118, 118);
+}
+.search-icon {
+  width: 10%;
+  justify-content: center;
+  margin-left: 16rpx;
+}
+.search-input {
+  width: 85%;
+  height: 70rpx;
+  background-color: #f2f2f2;
+  border-radius: 40rpx;
+  margin-left: 16rpx;
+  align-items: flex-start;
+  justify-content: center;
+}
+.search-input text {
+  color: gray;
+  margin-left: 16rpx;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  height: 100%;
+
+}
+
+
+.m-swiper{
+  /* margin: 25rpx; */
+}
+.swiper-banner{
+  margin-bottom: 60rpx;
+  width: 100%;
+  height: 340rpx;
+  margin: 0 auto;
+}
+.slide-image{
+  width: 100%;
+  height: 340rpx;
+  display: block
+}
+
+.list-nav{
+  margin: 0rpx 25rpx;
+  background: #ffffff;
+  margin-bottom: 25rpx;
+}
+.nav-title{
+  background: #ffffff;
+  margin: 0rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  padding: 0rpx 15rpx 0rpx 0rpx;
+  align-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid #5f0707;
+  color: #666666;
+  position: relative;
+}
+.more{
+  position: absolute;
+  right: 25rpx;
+  display: block;
+  width: 200rpx;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+}
+.title-txt{
+  font-size:30rpx;
+  color: #222222;
+  width: 160rpx;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.title-txt.current{
+  color: #8f0a0a;
+  font-weight: bold
+}
+.nav-tab{
+  margin-top: 25rpx;
+  padding: 0rpx 20rpx;
+  padding-bottom: 25rpx;
+}
+.img-list{
+  width: 32.333%;
+  height: 160rpx;
+  position: relative;
+}
+.img-01{
+  height:160rpx; 
+  width:100%;
+  border-radius: 8rpx;
+}
+.keshu{
+  color: #ffffff;
+  background: rgba(102, 102, 102, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  border-radius: 8rpx;
+}
+.nav-list-01{
+  margin:25rpx;
+}
+.img-02{
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+}
+.img-03{
+  width: 200rpx;
+  height: 180rpx;
+  border-radius: 8rpx;
+}
+.infor-txt{
+  flex: 3;
+  margin-left: 25rpx;  
+  font-size: 28rpx;
+  color: #444444;
+}
+.tip-txt{
+  font-size: 26rpx;
+  color: #666666;
+}
+
+.m-card{
+  position: relative;
+}
+.m-day{
+  margin: 25rpx;
+  background: #ffffff;
+}
+.share-day{
+  border: 3rpx solid #dedede;
+  border-radius: 8rpx;
+}
+.day-card{
+  border-radius: 8rpx;
+  width: 100%;
+  height: 380rpx;
+  border: 3rpx solid #ffffff;
+}
+.exchange{
+  color: #f56a0c;
+  display: flex;
+  margin-left: auto;
+  margin-right: 25rpx;
+  width: 150rpx;
+}
+.circle-img{
+  width: 48rpx;
+  height: 48rpx;
+}
+.m-share{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.466);
+  left: 0;
+  right: 0;
+  padding-top: 40rpx;
+}
+.m-day{
+  position: relative;
+}
+.card-infor{
+  position: absolute;
+  height: 380rpx;
+  border-radius: 8rpx;
+  width: 100%;
+  background: rgba(94, 93, 93, 0.493);
+  top: 0;
+}
+.card-list{
+  height: 82%;
+  display: flex;
+  width: 100%;
+}
+.card-txt{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  width: 70%;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: auto;
+}
+.week{
+  height: 120rpx;
+  width: 100rpx;
+  background: #cccccc;
+  color: #111111;
+  margin-top: 10rpx;
+  margin-bottom: auto;
+  display: flex;
+  border-radius: 8rpx;
+}
+.txt-01{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.day-num{
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #444444;
+}
+
+.share{
+  width: 160rpx;
+  height: 50rpx;
+  background: rgba(255, 255, 255, 0.473);
+  color: #ffffff;
+  font-size: 27rpx;
+  display: flex;
+  margin-left: auto;
+  margin-right: 25rpx;
+  border-radius: 8rpx;
+}
+.operate{
+  background: #ffffff;
+  height: 120rpx;
+  /* border-bottom-left-radius: 8rpx;
+  border-bottom-right-radius:8rpx;  */
+  border-bottom: 1rpx solid #9999;
+}
+
+.btn-01{
+  width: 33.333%;
+  text-align: center;
+  justify-content: center;
+}
+.icon-001{
+  width: 36rpx;
+  height: 36rpx;
+}
+.close{
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+.icon-colose{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+

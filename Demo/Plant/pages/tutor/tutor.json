@@ -1,0 +1,5 @@
+{  
+  "usingComponents": {
+    "tabCommon":"../../comComponent/tabCommon/tabCommon"
+  }
+}

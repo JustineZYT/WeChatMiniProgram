@@ -1,0 +1,23 @@
+/* comComponent/tabCommon/tabCommon.wxss */
+@import "/common/base.wxss";
+
+.tab-nav{
+  background: #ffffff;
+  font-size: 30rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.nav-01{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  border-bottom: 2rpx solid #979797;
+}
+.nav-01.current{
+  color: #790909;
+  border-bottom: 2rpx solid #790909;
+}

@@ -1,0 +1,46 @@
+<!--pages/botany-detail/botany-detail.wxml-->
+<view class="container">
+  <view class="adver">
+    <image src="../../images/default-01.png"  class="img-ad"/>
+    <view class="botany-name">栢科</view>
+  </view>
+  <view class="introduce">
+    <view class="introduce-title">
+      柏科相關精油
+    </view>
+    <view class="english-name">Cupressaceae related essential oil</view>
+    <view class="introduce-content">
+      柏科植物與松科植物相近:葉子也是針狀
+      是鱗狀結構·果實的形狀比較圓就似獎果的
+      毬果。柏科植物生長在南北半球,是適應能
+      力強的樹種。由於木材材質較硬,有具有獨
+      特的芬芳;是用來起宮殿、寺廟很好的木
+      材
+    </view>
+    <view class="introduce-title">
+     科屬特色
+    </view>
+    <view class="introduce-content">
+      柏科是古老的樹種有淨化心靈的好處’能
+      清除負面情緒丶局限的思維丶低能量狀態。
+      它們的氣味比松科更穩重;適合用在瑜珈丶
+      冥想丶打坐等與內在深層溝通時使用。此外
+      還能促進身體水分循環具有消除水腫丶增
+      強排尿次丶使毒素順利排除體外等好處。
+    </view>
+  </view>
+
+  <view class="list">
+        <block wx:for="{{listData}}">
+            <view class="oil-nav-01 d-row j-start" bindtap="goBotanyDetail">
+                <view class="oil-name">
+                  <image class="oil-img" src="{{item.url}}" />
+                  <view class="oil-img-name">
+                    <view class="h1-txt">{{item.name}}</view>
+                    <view class="h6-txt">SWEET ORANGE ESSENTIAL OIL</view>
+                  </view>
+                </view>
+            </view>
+        </block>
+  </view>
+</view>
