@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/index",
+    "pages/login/login",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "菜谱",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap68.json"
+}
