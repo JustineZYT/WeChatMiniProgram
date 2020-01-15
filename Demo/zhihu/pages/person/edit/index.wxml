@@ -1,0 +1,25 @@
+<view class='main-wrapper'>
+  <view class='avatar-box'>
+    <text class='lable'>头像</text>
+    <view class='avatar'>
+      <image src='{{myDetail.avatar}}' mode='aspectFill' wx:if='{{myDetail.avatar}}'></image>
+      <image src='/images/avatar_default.png' wx:else></image>
+    </view>
+  </view>
+  <view class='info-box'>
+    <text class='lable'>昵称</text>
+    <text>{{myDetail.nickname}}</text>
+  </view>
+  <view class='info-box' catchtap='jumptoIntroEdit'>
+    <text class='lable'>个人简介</text>
+    <text class='tip'>{{myDetail.desc ? myDetail.desc : "用一句话介绍你自己"}}</text>
+  </view>
+  <view class='info-box'>
+    <text class='lable'>地区</text>
+    <text>{{myDetail.area}}</text>
+  </view>
+  <view class='info-box'>
+    <text class='lable'>性别</text>
+    <text>{{myDetail.gender == "2" ? "女" : "男"}}</text>
+  </view>
+</view>

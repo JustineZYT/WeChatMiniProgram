@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "问题详情",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "answerItem-cmp": "/components/answer-item/index",
+    "gridPreview-cmp": "/components/grid-preview/index"
+  }
+}

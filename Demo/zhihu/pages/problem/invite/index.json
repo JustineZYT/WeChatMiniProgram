@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "邀请问答",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "followItem-cmp": "/components/follow-item/index",
+    "wxAuth-cmp": "/components/wx-auth/index"
+  }
+}

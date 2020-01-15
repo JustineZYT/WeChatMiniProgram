@@ -1,0 +1,107 @@
+.top-wrapper {
+  padding: 25rpx 30rpx;
+  background: #fff;
+}
+
+.top-wrapper .search {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  background: rgba(241, 246, 249, 1);
+  border-radius: 11rpx;
+  padding: 0 26rpx;
+}
+
+.top-wrapper .search image:first-child {
+  width: 29rpx;
+  height: 28rpx;
+  margin-right: 22rpx;
+}
+
+.top-wrapper .search image:last-child {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 22rpx;
+}
+
+.top-wrapper .search input {
+  width: 535rpx;
+}
+
+.tip {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #bbb;
+}
+
+.top-wrapper .tab-container {
+  margin-top: 40rpx;
+  padding: 0 184rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-wrapper .tab-container .tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-wrapper .tab-container .tab-item text {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #666;
+  line-height: 42rpx;
+  margin-bottom: 20rpx;
+}
+
+.top-wrapper .tab-container .tab-item .border {
+  width: 35rpx;
+  height: 4rpx;
+  background: #038fff;
+}
+
+.active text {
+  color: #000 !important;
+}
+
+.content-wrapper {
+  margin-top: 20rpx;
+}
+
+.content-wrapper .search-history .history-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx 30rpx;
+}
+
+.content-wrapper .search-history .history-top text:first-child {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #999;
+}
+
+.content-wrapper .search-history .history-top text:last-child {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #0c8fff;
+}
+
+.content-wrapper .search-history .history-content .history-item {
+  padding: 30rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rpx;
+}
+
+.content-wrapper .search-history .history-content .history-item image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.content-wrapper .search-history .history-content .history-item text {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #666;
+}

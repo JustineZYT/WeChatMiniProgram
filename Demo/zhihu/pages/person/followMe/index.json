@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "关注我的人",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "followItem-cmp": "/components/follow-item/index"
+  }
+}

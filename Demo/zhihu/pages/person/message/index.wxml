@@ -1,0 +1,26 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class='main-wrapper' wx:if='{{messageList.length > 0}}'>
+  <view class='message-item' wx:for='{{messageList}}' wx:key='this' data-mid='{{item.id}}' data-read='{{item.is_read}}' data-uid='{{item.u_id}}' data-qid='{{item.q_id}}' data-aid='{{item.a_id}}' data-mtype='{{item.type}}' catchtap='jumptoMessageDetail'>
+    <view class='info-box'>
+      <view class='info'>
+        <view class='avatar'>
+          <image wx:if='{{item.avatar}}' src='{{item.avatar}}'></image>
+          <image wx:else src='/images/avatar_default.png'></image>
+        </view>
+        <text class='nickname'>{{item.nickname ? item.nickname : '匿名'}}</text>
+        <view class='icon' wx:if='{{item.user_type == "2"}}'>
+          <image src='/images/vip.png'></image>
+        </view>
+        <text class='message'>{{common.getUserMessage(item.type)}}</text>
+      </view>
+      <view class='time'>
+        <view class='tip' wx:if='{{item.is_read == "0"}}'></view>
+        <text>{{common.handleTime(item.day,item.hour,item.minute)}}</text>
+      </view>
+    </view>
+    <view class='title special showTwoLines' wx:if='{{item.title}}'>{{item.title}}</view>
+  </view>
+</view>
+
+<view class='no-data' wx:else>暂无消息</view>

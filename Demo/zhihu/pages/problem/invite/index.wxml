@@ -1,0 +1,22 @@
+<view class="main-wrapper">
+  <view class='top-wrapper'>
+    <view class='search'>
+      <image src='/images/search.png'></image>
+      <input type='text' placeholder-class="tip" placeholder='搜索你想邀请的人' auto-focus='true' bindinput="searchKeyword" value='{{searchValue}}'>
+      </input>
+      <image src='/images/clear.png' wx:if='{{searchValue}}' bindtap='clearSearchValue'></image>
+    </view>
+  </view>
+  <view class='content-wrapper'>
+    <view class='self-follow' wx:if='{{!searchValue}}'>邀请我关注的用户</view>
+    <view class='follow-container'>
+      <block wx:if='{{!searchValue}}' wx:for='{{attentionUserList}}' wx:key='this'>
+        <followItem-cmp actionType='2' itemStatus='{{item.is_invite}}' userId='{{item.u_id}}' userType='{{item.user_type}}' avatar='{{item.avatar}}' nickName='{{item.nickname}}' />
+      </block>
+      <block wx:if='{{searchValue}}' wx:for='{{searchUserList}}' wx:key='this'>
+        <followItem-cmp actionType='2' itemStatus='{{item.is_invite}}' userId='{{item.u_id}}' userType='{{item.user_type}}' avatar='{{item.avatar}}' nickName='{{item.nickname}}' />
+      </block>
+    </view>
+  </view>
+</view>
+<wxAuth-cmp showWxAuth="{{showWxAuth}}" bind:wxAuthorize='wxAuthorize' />

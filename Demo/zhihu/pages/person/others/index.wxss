@@ -1,0 +1,38 @@
+.tab-container {
+  margin-top: 120rpx;
+  padding: 0 80rpx;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tab-container .tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-container .tab-item text {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #666;
+  line-height: 42rpx;
+  margin-bottom: 20rpx;
+}
+
+.tab-container .border {
+  position: absolute;
+  width: 35rpx;
+  height: 4rpx;
+  background: #038fff;
+  top: 60rpx;
+  transition: left 0.2s;
+}
+
+.active text {
+  color: #000 !important;
+}
+
+.content-container {
+  margin-top: 20rpx;
+}

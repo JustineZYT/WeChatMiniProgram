@@ -1,0 +1,34 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class='main-wrapper'>
+  <personTopbar-cmp status='2' userId='{{myDetail.id}}' avatar='{{myDetail.avatar}}' nickName="{{myDetail.nickname}}" sex='{{myDetail.gender}}'
+    address='{{myDetail.area}}' intro='{{myDetail.desc}}' userType='{{myDetail.user_type}}' folProbCount='{{myDetail.attention_question_num}}'
+    folPersonCount='{{myDetail.attention_user_num}}' folSelfCount='{{myDetail.follow_num}}' attentionStatus='{{myDetail.is_attention}}'
+  />
+  <view class='tab-container'>
+    <view class='tab-item {{tabIndex === 0 ? "active" : ""}}' catchtap='tabChange' data-tab-index="{{0}}">
+      <text>他的回答（{{answerTotal}}）</text>
+    </view>
+    <view class='tab-item {{tabIndex === 1 ? "active" : ""}}' catchtap='tabChange' data-tab-index="{{1}}">
+      <text>他的提问（{{questionTotal}}）</text>
+    </view>
+    <view class='border' style="left: {{150 + tabIndex * 375}}rpx;"></view>
+  </view>
+  <view class='content-container'>
+    <swiper class='swiper' bindchange="swiperChange" current="{{tabIndex}}" duration='500' style='height:{{windowHeight}}px;'>
+      <swiper-item class='swiper-item'>
+        <block wx:for='{{answerList}}' wx:key="this">
+          <answerItem-cmp itemType='{{item.answer.cover_img ? 2: 1}}' topInfoType='2' q_id='{{item.question.id}}' a_id='{{item.answer.id}}' title='{{item.question.title}}' rtime="{{common.handleTime(item.answer.day,item.answer.hour,item.answer.minute)}}" answer='{{item.answer.content}}'
+            imgSrc='{{item.answer.cover_img}}' supportCount='{{item.answer.support_num}}' commentCount='{{item.answer.comment_num}}'
+          />
+        </block>
+      </swiper-item>
+      <swiper-item class='swiper-item'>
+        <block wx:for='{{questionList}}' wx:key='{{item.id}}'>
+          <problemItem-cmp q_id='{{item.id}}' title="{{item.title}}" answerCount='{{item.answer_num}}' rtime="{{common.handleTime(item.day,item.hour,item.minute)}}"
+          />
+        </block>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

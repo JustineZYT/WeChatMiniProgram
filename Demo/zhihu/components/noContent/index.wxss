@@ -1,0 +1,6 @@
+.box {
+  color: #ccc;
+  font-size: 30rpx;
+  margin-top: 60rpx;
+  text-align: center;
+}

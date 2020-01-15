@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "追加描述",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "wxAuth-cmp": "/components/wx-auth/index"
+  }
+}

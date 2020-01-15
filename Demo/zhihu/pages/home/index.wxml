@@ -1,0 +1,58 @@
+<wxs src='../../wxs/common.wxs' module='common' />
+
+<view class='header'>
+  <view class='search' bindtap='jumptoSearch'>
+    <view class='slogan'>知识社区</view>
+    <view class='search-area'>搜索你想了解的问题或用户...</view>
+  </view>
+  <view class='nav'>
+    <view bindtap='tabChange' data-tab-index="{{0}}" class="nav-item {{tabIndex === 0 ? 'active' : ''}}">热门</view>
+    <view bindtap='tabChange' data-tab-index="{{1}}" class="nav-item {{tabIndex === 1 ? 'active' : ''}}">关注</view>
+    <view bindtap='tabChange' data-tab-index="{{2}}" class="nav-item {{tabIndex === 2 ? 'active' : ''}}">最新</view>
+    <view bindtap='tabChange' data-tab-index="{{3}}" class="nav-item {{tabIndex === 3 ? 'active' : ''}}">分类</view>
+    <view class='active-line' style="left: {{75 + tabIndex * 190}}rpx;"></view>
+  </view>
+</view>
+<swiper class='swiper' bindchange="swiperChange" current="{{tabIndex}}" duration='500' style='height:{{windowHeight}}px;'>
+  <swiper-item class="swiper-item">
+    <scroll-view class='scroll-view' scroll-y scroll-with-animation bindscrolltolower="hotBottom">
+      <block wx:for='{{hotList}}' wx:key='this'>
+        <listIitem-cmp itemType='{{item.question.cover_img ? 2: 1}}' q_id="{{item.question.id}}" title="{{item.question.title}}"
+          imgSrc='{{item.question.cover_img}}' replier="{{item.answer.nickname}}" a_id="{{item.answer.a_id}}" answer="{{item.answer.content}}"
+          followCount="{{item.question.attention_num}}" answerCount="{{item.question.answer_num}}" />
+      </block>
+      <button class="authBtn" wx:if='{{userType == "0"}}' lang="zh_CN" open-type='getUserInfo' bindgetuserinfo='wxAuthorize'>登录查看更多内容</button>
+      <view class='no-data home' wx:if='{{hotList.length == 0}}'>暂无热门</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <scroll-view class="scroll-view" scroll-y scroll-with-animation bindscrolltolower="attentionBottom">
+      <block wx:for='{{attentionList}}' wx:key='this'>
+        <listIitem-cmp itemType='{{item.question.cover_img ? 2: 1}}' showFollowerInfo="{{true}}" rtime="{{common.handleTime(item.day,item.hour,item.minute)}}" a_id='{{item.answer.id}}' q_id="{{item.question.id}}" title="{{item.question.title}}"
+          answer="{{item.answer.content}}" followCount="{{item.question.attention_num}}" answerCount="{{item.question.answer_num}}" u_id='{{item.user.id}}' avatar="{{item.user.avatar}}"
+          follower="{{item.user.nickname}}" imgSrc="{{item.question.cover_img}}" message="{{common.getAttentionMessage(item.type)}}" />
+      </block>
+      <view class='no-data home' wx:if='{{attentionList.length == 0}}'>暂无关注</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <scroll-view class="scroll-view" scroll-y scroll-with-animation bindscrolltolower="latestBottom">
+      <block wx:for='{{latestList}}' wx:key='this'>
+        <listIitem-cmp itemType='{{item.question.cover_img ? 2: 1}}' q_id="{{item.question.id}}" title="{{item.question.title}}"
+          imgSrc='{{item.question.cover_img}}' rtime="{{common.handleTime(item.question.day,item.question.hour,item.question.minute)}}" replier="{{item.answer.nickname}}" a_id="{{item.answer.a_id}}" answer="{{item.answer.content}}"
+          followCount="{{item.question.attention_num}}" answerCount="{{item.question.answer_num}}" />
+      </block>
+      <button class="authBtn" wx:if='{{userType == "0"}}' lang="zh_CN" open-type='getUserInfo' bindgetuserinfo='wxAuthorize'>登录查看更多内容</button>
+      <view class='no-data home' wx:if='{{latestList.length == 0}}'>暂无最新</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <scroll-view class="scroll-view" scroll-y scroll-with-animation>
+      <block wx:for='{{tagList}}' wx:key='this'>
+        <classificationItem-cmp tag_id='{{item.id}}' imgSrc="{{item.icon}}" title="{{item.name}}" problemCount="{{item.question_num}}"
+        />
+        <view class='no-data home' wx:if='{{tagList.length == 0}}'>暂无分类</view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>

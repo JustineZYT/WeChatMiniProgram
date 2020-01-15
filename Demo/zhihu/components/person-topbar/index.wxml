@@ -1,0 +1,53 @@
+<view class='top-wrapper'>
+  <view class='top-container'>
+    <view class='person-container'>
+      <view class='avatar'>
+        <image src='{{avatar}}' mode='aspectFill'></image>
+        <image wx:if='{{userType == "2"}}' class='isAuth-icon' src='/images/vip.png'></image>
+      </view>
+      <view class='info-box'>
+        <view class='info'>
+          <view class='name'>{{nickName}}</view>
+          <view class='position'>
+            <view>
+              <image wx:if='{{sex == "2"}}' src='/images/female.png'></image>
+              <image wx:else src='/images/male.png'></image>
+            </view>
+            <text>{{address}}</text>
+          </view>
+        </view>
+        <view class='intro'>{{intro}}</view>
+      </view>
+    </view>
+    <view class='action-container' wx:if='{{status == 1}}' catchtap='_jumptoUserEdit'>
+      <view class='edit'>
+        <image src='/images/edit.png'></image>
+      </view>
+      <text>编辑</text>
+    </view>
+    <view class='action-container {{attentionStatus != 0 ? "attention" : "follow"}}' catchtap='_attentionUser' wx:else>
+      <view class='edit' wx:if='{{attentionStatus == 0}}'>
+        <image src='/images/add.png'></image>
+      </view>
+      <text wx:if='{{attentionStatus == 0}}'>关注</text>
+      <text wx:else>{{attentionStatus == 1 ? '已关注' : '互相关注'}}</text>
+    </view>
+  </view>
+  <view class='follow-container'>
+    <view class='follow-item' catchtap='_jumptoFollowProblem'>
+      <text>{{folProbCount}}</text>
+      <text wx:if='{{status == 1}}'>我关注的问题</text>
+      <text wx:else>{{sex == "2" ? '她' : '他'}}关注的问题</text>
+    </view>
+    <view class='follow-item' catchtap='_jumptoAttentionUser'>
+      <text>{{folPersonCount}}</text>
+      <text wx:if='{{status == 1}}'>我关注的人</text>
+      <text wx:else>{{sex == "2" ? '她' : '他'}}关注的人</text>
+    </view>
+    <view class='follow-item' catchtap='_jumptoFollowMeUser'>
+      <text>{{folSelfCount}}</text>
+      <text wx:if='{{status == 1}}'>关注我的人</text>
+      <text wx:else>关注{{sex == "2" ? '她' : '他'}}的人</text>
+    </view>
+  </view>
+</view>

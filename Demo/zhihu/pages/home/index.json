@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText":"印答",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+      "listIitem-cmp": "/components/list-item/index",
+      "classificationItem-cmp": "/components/classification-item/index"
+    }
+}

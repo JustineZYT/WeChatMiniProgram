@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "知识问答",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "listIitem-cmp": "/components/list-item/index",
+    "followItem-cmp": "/components/follow-item/index"
+  }
+}

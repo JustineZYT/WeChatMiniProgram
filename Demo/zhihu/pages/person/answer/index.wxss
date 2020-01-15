@@ -1,0 +1,4 @@
+.main-wrapper {
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}

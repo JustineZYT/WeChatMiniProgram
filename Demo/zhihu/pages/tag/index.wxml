@@ -1,0 +1,5 @@
+<view class='main-wrapper'>
+  <listIitem-cmp wx:for='{{tagQustionList}}' wx:key='this' itemType='{{item.question.cover_img ? 2: 1}}' q_id="{{item.question.id}}" title="{{item.question.title}}" imgSrc='{{item.question.cover_img}}'
+    replier="{{item.answer.nickname}}" a_id="{{item.answer.a_id}}" answer="{{item.answer.content}}" followCount="{{item.question.attention_num}}" answerCount="{{item.question.answer_num}}"
+  />
+</view>

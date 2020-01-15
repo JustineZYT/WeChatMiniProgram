@@ -1,0 +1,58 @@
+<view class='main-wrapper'>
+  <personTopbar-cmp userId='{{myDetail.id}}' avatar='{{myDetail.avatar}}' nickName="{{myDetail.nickname}}" sex='{{myDetail.gender}}'
+    address='{{myDetail.area}}' intro='{{myDetail.desc}}' userType='{{myDetail.user_type}}' folProbCount='{{myDetail.attention_question_num}}' folPersonCount='{{myDetail.attention_user_num}}'
+    folSelfCount='{{myDetail.follow_num}}' />
+  <view class='content-wrapper'>
+    <view class='person-info'>
+      <view class='content-item' catchtap='jumptoMyMessage'>
+        <text>我的消息</text>
+        <view class='arrow-box'>
+          <view class='tip' wx:if='{{myDetail.message_num > 0}}'>{{myDetail.message_num}}</view>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyQuestion'>
+        <text>我的提问</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyAnswer'>
+        <text>我的回答</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='person-auth'>
+      <view class='content-item' catchtap='jumptoPhoneBind'>
+        <text>绑定手机号码</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <text>{{myDetail.phone_number ? "已" : "请"}}绑定</text>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoUserAuth'>
+        <text>实名认证</text>
+        <view class='arrow-box'>
+          <text wx:if='{{myDetail.confirm_status == "0"}}'>请实名</text>
+          <text wx:if='{{myDetail.confirm_status == "1"}}'>审核中</text>
+          <text wx:if='{{myDetail.confirm_status == "2"}}'>审核未通过</text>
+          <text wx:if='{{myDetail.confirm_status == "3"}}'>已实名</text>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<wxAuth-cmp showWxAuth="{{showWxAuth}}" bind:wxAuthorize='wxAuthorize' />

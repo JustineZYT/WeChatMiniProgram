@@ -1,0 +1,207 @@
+.main-wrapper {
+  position: relative;
+  padding-bottom: 104rpx;
+}
+
+.main-container {
+  /* height: calc(100vh - 102rpx); */
+  /* overflow-y: auto; */
+}
+
+.top-wrapper {
+  background: #fff;
+  padding: 30rpx;
+}
+
+.top-wrapper .title {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.5em;
+  margin-bottom: 15rpx;
+}
+
+.top-wrapper .action {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.top-wrapper .action .write-answer {
+  display: flex;
+  align-items: center;
+}
+
+.top-wrapper .action .write-answer image {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 15rpx;
+}
+
+.top-wrapper .action .write-answer text {
+  color: #0c8fff;
+}
+
+.top-wrapper .action .more-answer {
+  color: #888;
+}
+
+.answer-wrapper {
+  background: #fff;
+  padding: 30rpx;
+  margin-top: 20rpx;
+}
+
+.answer-wrapper .top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-wrapper .top-box .answerer-box {
+  display: flex;
+}
+
+.answer-wrapper .top-box .answerer-box .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.answer-wrapper .top-box .answerer-box .avatar image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.answer-wrapper .top-box .answerer-box .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.answer-wrapper .top-box .answerer-box .info .name {
+  display: flex;
+  align-items: center;
+}
+
+.answer-wrapper .top-box .answerer-box .info .name view {
+  display: flex;
+  align-content: center;
+  margin-left: 8rpx;
+}
+
+.answer-wrapper .top-box .answerer-box .info .name image {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.answer-wrapper .top-box .answerer-box .info .name text {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.answer-wrapper .top-box .answerer-box .info .intro {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+}
+
+.answer-wrapper .top-box .follow-box {
+  width: 132rpx;
+  height: 67rpx;
+  background: #0c8fff;
+  border-radius: 8rpx;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-wrapper .content-box {
+  margin-top: 20rpx;
+}
+
+.answer-wrapper .content-box .answer-content {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5em;
+}
+
+.answer-wrapper .content-box .release-time {
+  margin-top: 37rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.action-wrapper {
+  background: #fff;
+  width: 100%;
+  height: 102rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2rpx solid #e5e5e5;
+}
+
+.action-wrapper .action-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+.action-wrapper .action-container .action-box {
+  display: flex;
+}
+
+.action-wrapper .action-container .action-box .action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 76rpx;
+}
+
+.action-wrapper .action-container .action-box .action-item image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.action-wrapper .action-container .action-box .action-item text {
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 34rpx;
+}
+
+.action-wrapper .action-container .share-btn {
+  width: 138rpx;
+  height: 64rpx;
+  border: 2rpx solid #0c8fff;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  line-height: 64rpx;
+  color: #0c8fff;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.like-fill {
+  color: #038fff !important;
+}
+
+.attention {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #999;
+}

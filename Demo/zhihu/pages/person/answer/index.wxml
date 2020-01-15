@@ -1,0 +1,9 @@
+<view class='main-wrapper' wx:if='{{answerList.length > 0}}'>
+  <block wx:for='{{answerList}}' wx:key="this">
+      <answerItem-cmp itemType='{{item.answer.cover_img ? 2: 1}}' topInfoType='2' title='{{item.question.title}}' q_id='{{item.question.id}}' a_id='{{item.answer.id}}' answer='{{item.answer.content}}'
+      imgSrc='{{item.answer.cover_img}}' supportCount='{{item.answer.support_num}}' commentCount='{{item.answer.comment_num}}'
+    />
+  </block>
+</view>
+
+<view class='no-data' wx:else>暂无回答</view>

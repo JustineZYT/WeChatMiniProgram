@@ -1,0 +1,47 @@
+.classification-item {
+  box-sizing: border-box;
+  height: 131rpx;
+  background: #fff;
+  padding: 25rpx;
+  display: flex;
+  margin-bottom: 2rpx;
+}
+
+.classification-item image {
+  width: 89rpx;
+  height: 89rpx;
+  border-radius: 50%;
+}
+
+.classification-item .content {
+  width: 100%;
+  height: 89rpx;
+  margin-left: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.classification-item .content image {
+  width: 10rpx;
+  height: 17rpx;
+}
+
+.classification-item .content .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.classification-item .content .info .title {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: 400;
+}
+
+.classification-item .content .info .problem-count {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #aaa;
+}

@@ -1,0 +1,7 @@
+<view class='main-wrapper' style="height: {{containerHeight}}px">
+  <form bindsubmit='introEdit'>
+    <input auto-focus='true' name="intro" class='intro' type='text' value='{{intro}}' placeholder="用一句话介绍你自己" placeholder-class='tip' bindfocus="keyboardFocus"
+      bindblur="keyboardBlur" adjust-position></input>
+    <button class='save' form-type='submit'>保存</button>
+  </form>
+</view>

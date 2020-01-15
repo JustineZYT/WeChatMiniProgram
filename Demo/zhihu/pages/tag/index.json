@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "分类",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "listIitem-cmp": "/components/list-item/index"
+  }
+}

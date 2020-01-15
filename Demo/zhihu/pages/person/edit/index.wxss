@@ -1,0 +1,48 @@
+.main-wrapper {
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+
+.avatar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 168rpx;
+  padding: 0 30rpx;
+  margin-bottom: 2rpx;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 86rpx;
+  padding: 0 30rpx;
+  margin-bottom: 2rpx;
+}
+
+.info-box>text:last-child {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+
+.avatar-box .avatar image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.lable {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #999;
+}
+
+.tip {
+  font-size: 30rpx !important;
+  font-weight: 400 !important;
+  color: #bbb !important;
+}

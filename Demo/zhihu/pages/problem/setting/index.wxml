@@ -1,0 +1,23 @@
+<view class='main-wrapper'>
+  <view class='top-wrapper'>
+    <view class='classify-title'>可为问题添加最多3个分类</view>
+    <view class='classify-box'>
+      <view wx:for="{{tags}}" wx:for-item="item" wx:key="id" wx:for-index="index"
+        class="classify-item {{item.active ? 'active' : ''}}"
+        bindtap='toggleChooseTag' data-tag-id="{{item.id}}" data-tag-index="{{index}}"
+      >{{item.name}}</view>
+    </view>
+  </view>
+  <!-- <view class='action-wrapper'>
+    <view class='tip'>
+      <text>启用匿名提问</text>
+      <text>仅VIP</text>
+    </view>
+    <view class='action'>
+      <switch bindchange='toggleAnony' checked="{{is_anony}}" color='#0c8fff'></switch>
+    </view>
+  </view> -->
+  <form report-submit='true' bindsubmit='submit'>
+    <button class='submitBtn' form-type='submit'>发布</button>
+  </form>
+</view>

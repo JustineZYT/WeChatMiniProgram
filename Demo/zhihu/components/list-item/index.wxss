@@ -1,0 +1,77 @@
+@import '../../wxss/common.wxss';
+
+.list-item {
+  padding: 25rpx;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+}
+
+.list-item .person-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.list-item .person-info>view:first-child {
+  display: flex;
+}
+
+.list-item .person-info>view:last-child {
+  font-size: 24rpx;
+  color: #bbb;
+  line-height: 50rpx;
+}
+
+.person-info .img-wrap image {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+
+.person-info .message {
+  font-size: 27rpx;
+  font-weight: 500;
+  color: #bbb;
+  line-height: 50rpx;
+}
+
+.list-item .answer {
+  color: #999;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 27rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.list-item .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.list-item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item .img image {
+  width: 195rpx;
+  height: 113rpx;
+  border-radius: 8rpx;
+}
+
+.withimg {
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

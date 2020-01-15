@@ -1,0 +1,10 @@
+<view class='main-wrapper' wx:if='{{userList.length > 0}}'>
+  <view class='follow-container'>
+    <block wx:for='{{userList}}' wx:key='this'>
+      <followItem-cmp itemStatus='{{item.is_attention}}' userId='{{item.id}}' userType='{{item.user_type}}' avatar='{{item.avatar}}'
+        nickName='{{item.nickname}}' />
+    </block>
+  </view>
+</view>
+
+<view class='no-data' wx:else>暂无关注我的人</view>

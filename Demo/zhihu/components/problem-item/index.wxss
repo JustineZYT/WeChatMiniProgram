@@ -1,0 +1,7 @@
+@import '../../wxss/common.wxss';
+
+.problem-item {
+  padding: 25rpx;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+}

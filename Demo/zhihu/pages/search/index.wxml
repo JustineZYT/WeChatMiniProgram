@@ -1,0 +1,44 @@
+<view class="main-wrapper">
+  <view class='top-wrapper'>
+    <view class='search'>
+      <image src='/images/search.png'></image>
+      <input type='text' placeholder-class="tip" placeholder='搜索你想了解的问题或用户...' auto-focus='true' bindinput="searchKeyword" value='{{searchValue}}'>
+      </input>
+      <image src='/images/clear.png' wx:if='{{searchValue}}' bindtap='clearSearchValue'></image>
+    </view>
+    <view class='tab-container'>
+      <view data-tabnum='1' class='tab-item {{tabnum == 1 ? "active" : ""}}' bindtap='tabSwitch'>
+        <text>搜问题</text>
+        <view class='border' wx:if='{{tabnum == 1}}'></view>
+      </view>
+      <view data-tabnum='2' class='tab-item {{tabnum == 2 ? "active" : ""}}' bindtap='tabSwitch'>
+        <text>搜用户</text>
+        <view class='border' wx:if='{{tabnum == 2}}'></view>
+      </view>
+    </view>
+  </view>
+  <view class='content-wrapper'>
+    <view class='search-history' wx:if='{{!searchValue}}'>
+      <view class='history-top'>
+        <text>搜索历史</text>
+        <text catchtap='clearSearchHistory'>清空记录</text>
+      </view>
+      <view class='history-content'>
+        <view class='history-item' wx:for='{{searchHistory}}' wx:key='{{item.guid}}' data-keyword='{{item.keyword}}' catchtap='searchHistoryItem'>
+          <text>{{item.keyword}}</text>
+          <image src='/images/clear.png' data-guid='{{item.guid}}' catchtap='removeSearchItem'></image>
+        </view>
+      </view>
+    </view>
+    <view class='search-container' wx:else>
+      <block wx:if='{{tabnum == 1}}' wx:for='{{questionList}}' wx:key='this'>
+        <listIitem-cmp itemType='{{item.question.cover_img ? 2: 1}}' q_id="{{item.question.id}}" title="{{item.question.title}}"
+          imgSrc='{{item.question.cover_img}}' replier="{{item.answer.nickname}}" a_id="{{item.answer.a_id}}" answer="{{item.answer.content}}" followCount="{{item.question.attention_num}}"
+          answerCount="{{item.question.answer_num}}" />
+      </block>
+      <block wx:if='{{tabnum == 2}}' wx:for='{{userList}}' wx:key='this'>
+        <followItem-cmp itemStatus='{{item.is_attention}}' userId='{{item.id}}' userType='{{item.user_type}}' avatar='{{item.avatar}}' nickName='{{item.nickname}}' />
+      </block>
+    </view>
+  </view>
+</view>

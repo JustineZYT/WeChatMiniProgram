@@ -1,0 +1,34 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class='main-wrapper'>
+  <view class='comment-wrapper'>
+    <view class='comment-item' wx:for='{{commentList}}' wx:key='{{item.id}}'>
+      <view class='person-info'>
+        <view class='avatar'>
+          <image src='{{item.avatar}}' mode='aspectFill' wx:if='{{item.avatar}}'></image>
+          <image src='/images/avatar_default.png' mode='aspectFill' wx:else></image>
+        </view>
+        <view class='info-box'>
+          <view class='nickname-box'>
+            <text class='nickname'>{{item.nickname ? item.nickname : '匿名'}}</text>
+            <image src='/images/vip.png' wx:if='{{item.user_type == "2"}}'></image>
+          </view>
+          <view class='comment'>
+            <text class='reply' wx:if='{{item.s_nickname}}'>@{{item.s_nickname}}</text>
+            <text>{{item.content}}</text>
+          </view>
+          <text class='time'>{{common.handleTime(item.days,item.hours,item.minutes)}}</text>
+        </view>
+      </view>
+      <view class='action' data-nickname='{{item.nickname}}' data-uid='{{item.uid}}' catchtap='commentReply'>回复</view>
+    </view>
+  </view>
+  <form bindsubmit='answerCommentAdd' class='action-wrapper' style="bottom: {{inputToBottom}}px;">
+    <view class='action-container'>
+      <input bindfocus='inputFocus' bindblur='inputBlur' name='content' type='text'
+      placeholder-class='tip' placeholder='请输入你的评论' value="{{comment}}"></input>
+      <button form-type='submit'>发布</button>
+    </view>
+  </form>
+</view>
+<wxAuth-cmp showWxAuth="{{showWxAuth}}" bind:wxAuthorize='wxAuthorize' />

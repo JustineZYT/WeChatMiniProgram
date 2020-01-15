@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "回答",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "wxAuth-cmp": "/components/wx-auth/index"
+  }
+}

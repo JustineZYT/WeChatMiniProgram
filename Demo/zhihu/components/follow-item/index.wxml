@@ -1,0 +1,20 @@
+<view class='follow-item' catchtap='_jumptoUserCenter'>
+  <view class='person-info'>
+    <view class='avatar'>
+      <image src='{{avatar}}' mode='aspectFill'></image>
+    </view>
+    <text>{{nickName}}</text>
+    <view class='icon' wx:if='{{userType == "2"}}'>
+      <image src='/images/vip.png'></image>
+    </view>
+  </view>
+  <block wx:if='{{actionType == 1}}'>
+    <view class='action active' wx:if='{{itemStatus == 0}}' catchtap='_attentionUser'>关注</view>
+    <view class='action' wx:if='{{itemStatus == 1}}' catchtap='_attentionUser'>已关注</view>
+    <view class='action' wx:if='{{itemStatus == 2}}' catchtap='_attentionUser'>互相关注</view>
+  </block>
+  <block wx:if='{{actionType == 2}}'>
+    <view class='action active' wx:if='{{itemStatus == 0}}' catchtap='_questionInvite'>邀请</view>
+    <view class='action' wx:if='{{itemStatus == 1}}' catchtap='_questionInvite'>已邀请</view>
+  </block>
+</view>

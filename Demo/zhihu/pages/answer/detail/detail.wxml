@@ -1,0 +1,65 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class="main-wrapper">
+  <view class='main-container'>
+    <view class='top-wrapper'>
+      <view class='title'>{{answerDetail.title}}</view>
+      <view class='action'>
+        <view class='write-answer' catchtap='jumptoAnswerIndex'>
+          <image src='/images/pen.png'></image>
+          <text>写回答</text>
+        </view>
+        <view class='more-answer' catchtap='jumptoQuestionDetail'>查看全部答案 ></view>
+      </view>
+    </view>
+    <view class='answer-wrapper'>
+      <view class='top-box'>
+        <view class='answerer-box' catchtap='jumptoUserCenter'> 
+          <view class='avatar'>
+            <image wx:if='{{answerDetail.avatar}}' mode='aspectFill' src='{{answerDetail.avatar}}'></image>
+            <image wx:else src='/images/avatar_default.png'></image>
+          </view>
+          <view class='info'>
+            <view class='name'>
+              <text>{{answerDetail.nickname}}</text>
+              <view wx:if="{{answerDetail.user_type == '2'}}">
+                <image src='/images/vip.png'></image>
+              </view>
+            </view>
+            <text class='intro'>{{answerDetail.desc ? answerDetail.desc : "什么也没留下哦~"}}</text>
+          </view>
+        </view>
+        <block wx:if='{{user_id != answerDetail.uid}}'>
+          <view class='follow-box' bindtap='attentionAnswerUser' wx:if='{{answerDetail.is_attention == 0}}'>+ 关注</view>
+          <text class='attention' bindtap='attentionAnswerUser' wx:else>{{answerDetail.is_attention == 1 ? '已关注' : '互相关注'}}</text>
+        </block>
+      </view>
+      <view class='content-box'>
+        <view class='answer-content'>{{answerDetail.content.text}}</view>
+        <gridPreview-cmp images='{{answerDetail.content.images}}' video='{{answerDetail.content.video}}' />
+        <view class='release-time'>发布于{{common.formatDate(answerDetail.create_time)}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='action-wrapper'>
+    <view class='action-container'>
+      <view class='action-box'>
+        <view class='action-item' catchtap='answerSupport'>
+          <image src='/images/like.png' wx:if='{{answerDetail.is_support == 0}}'></image>
+          <image src='/images/like-fill.png' wx:else></image>
+          <text class='{{answerDetail.is_suppor == 1 ? "like-fill" : ""}}'>{{answerDetail.support_num}}</text>
+        </view>
+        <view class='action-item' catchtap='jumptoAnswerComment'>
+          <image src='/images/message.png'></image>
+          <text>{{answerDetail.comment_num}}条评论</text>
+        </view>
+        <view class='action-item' catchtap='answerInform'>
+          <image src='/images/error.png'></image>
+          <text>举报</text>
+        </view>
+      </view>
+      <button class='share-btn' open-type='share'>分享</button>
+    </view>
+  </view>
+</view>
+<wxAuth-cmp showWxAuth="{{showWxAuth}}" bind:wxAuthorize='wxAuthorize' />

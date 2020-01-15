@@ -1,0 +1,89 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class='main-wrapper'>
+  <view class='main-container'>
+    <view class='top-wrapper'>
+      <view class='classify-container'>
+        <text wx:for='{{questionDetail.tags}}' wx:key='item.id'>{{item.name}}</text>
+      </view>
+      <view class='detail-container'>
+        <view class='title'>{{questionDetail.question.title}}</view>
+        <view class='desc {{showAddContent ? "" : "showTwoLines"}}' wx:if='{{questionDetail.question.content.text}}'>{{questionDetail.question.content.text}}</view>
+        <view class='action' wx:if='{{!showAddContent}}' bindtap='showAddContent'>
+          <text>展开描述</text>
+          <image class='arrow-open' src='/images/arrow_open.png'></image>
+        </view>
+        <gridPreview-cmp wx:if='{{!isShowQRCode}}' images='{{questionDetail.question.content.images}}' video='{{questionDetail.question.content.video}}' />
+        <view class='more-desc' wx:if='{{questionDetail.question.add_content.text && showAddContent}}'>
+          <view class='title mtitle'>追加描述：</view>
+          <view class='desc'>{{questionDetail.question.add_content.text}}</view>
+          <gridPreview-cmp wx:if='{{!isShowQRCode}}' images='{{questionDetail.question.add_content.images}}' video='{{questionDetail.question.add_content.video}}' />
+        </view>
+        <view class='action' wx:if='{{showAddContent}}' bindtap='hideAddContent'>
+          <text>收起描述</text>
+          <image src='/images/arrow_open.png'></image>
+        </view>
+        <view class="info">
+          <text>{{questionDetail.question.attention_num}}人关注 · </text>
+          <text>{{questionDetail.question.answer_num}}个回答</text>
+        </view>
+        <view class='exist-box' wx:if='{{questionDetail.question.r_q_id > 0}}' bindtap='jumptoSimilarProblem'>存在相似问题，点此查看 ></view>
+      </view>
+    </view>
+    <view class='action-wrapper' wx:if='{{questionDetail.question.r_q_id == 0}}'>
+      <text catchtap='inviteAnswer'>邀请回答</text>
+      <text catchtap='jumptoAnswerIndex'>回答问题</text>
+      <text wx:if='{{user_id == questionDetail.question.u_id && !questionDetail.question.add_content.text}}' catchtap='jumptoProblemAppend'>追加描述</text>
+      <block wx:if='{{user_id != questionDetail.question.u_id}}'>
+        <button class='follow-box' wx:if='{{questionDetail.question.is_attention == 0}}' lang="zh_CN" open-type='getUserInfo' bindgetuserinfo='attentionQuestion'>
+          <text class='follow'>+ 关注问题</text>
+        </button>
+        <text class='attention' wx:else catchtap='cancelAttentionQuestion'>已关注</text>
+      </block>
+    </view>
+    <view class='answer-wrapper' wx:if='{{answerList.length > 0}}'>
+      <block wx:for='{{answerList}}' wx:key='item.id'>
+        <answerItem-cmp itemType='{{item.cover_image ? 2 : 1}}' q_id='{{questionDetail.question.id}}' a_id='{{item.id}}' answer='{{item.content}}' avatar='{{item.user.avatar}}' u_id='{{item.user.id}}' userType='{{item.user.user_type}}' rtime="{{common.handleTime(item.days,item.hours,item.minutes)}}" nickName='{{item.user.nickname}}' imgSrc='{{item.cover_image}}' supportCount='{{item.support_num}}'
+          commentCount='{{item.comment_num}}' />
+      </block>
+    </view>
+    <view class='noanswer-wrapper' wx:else>
+      <image src='/images/null-data.png'></image>
+      <text>该问题暂无回答</text>
+      <view>
+        <text>你可以</text>
+        <text class='invite' catchtap='inviteAnswer'>邀请用户回答</text>
+      </view>
+      <view class='gohome-wrap' catchtap='jumptoHome' wx:if='{{isShowGoHome}}'>
+        <view class='gohome-box'>首页</view>
+      </view>
+    </view>
+  </view>
+  <view class='share-wrapper'>
+    <view class='share-container'>
+      <view class='share-item border'>
+        <button class='shareBtn' open-type='share'>
+          <view class='img-wrap'>
+            <image src='/images/share_person.png'></image>
+          </view>
+          <text>分享给好友</text>
+        </button>
+      </view>
+      <view bindtap='createQrCode' class='share-item'>
+        <view class='img-wrap'>
+          <image src='/images/qrcode.png'></image>
+        </view>
+        <text>生成二维码</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="popup {{isShowQRCode ? '' : 'hide'}}" catchtouchmove="ture">
+  <view bindtap='cancelSave' class="popup-bg"></view>
+  <view class="popup-content">
+    <canvas canvas-id="qr-code" class="canvas"></canvas>
+    <view class="tip">保存问题二维码，分享给好友</view>
+    <view bindtap='clickSave' class="save-btn">保存至相册</view>
+  </view>
+</view>

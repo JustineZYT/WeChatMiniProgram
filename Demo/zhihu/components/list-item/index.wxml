@@ -1,0 +1,56 @@
+<!-- 无图 -->
+<view class='list-item' wx:if='{{itemType == 1}}'>
+  <view class='person-info' wx:if='{{showFollowerInfo}}'>
+    <view catchtap='_jumptoUserCenter'>
+      <view class='img-wrap'>
+        <image src="{{avatar}}" mode='aspectFill'></image>
+      </view>
+      <text class='message'>{{follower}} {{message}}</text>
+    </view>
+    <view>{{rtime}}</view>
+  </view>
+  <view class='title showTwoLines' catchtap='_jumptoQuestionDetail'>{{title}}</view>
+  <view wx:if='{{answer}}' class='content' catchtap='_jumptoAnswerDetail'>
+    <view class='answer'>
+      <text wx:if='{{!showFollowerInfo}}'>{{replier}}：</text>
+      <text>{{answer}}</text>
+    </view>
+  </view>
+  <view class='info-box'>
+    <view class="info">
+      <text>{{followCount}}人关注 · </text>
+      <text>{{answerCount}}个回答</text>
+    </view>
+    <view class="info" wx:if='{{rtime && !showFollowerInfo}}'>{{rtime}}</view>
+  </view>
+</view>
+
+<!-- 有图 -->
+<view class='list-item' wx:if='{{itemType == 2}}'>
+  <view class='person-info' wx:if='{{showFollowerInfo}}'>
+    <view catchtap='_jumptoUserCenter'>
+      <view class='img-wrap'>
+        <image src="{{avatar}}" mode='aspectFill'></image>
+      </view>
+      <text class='message'>{{follower}} {{message}}</text>
+    </view>
+    <view>{{rtime}}</view>
+  </view>
+  <view class='title showTwoLines' catchtap='_jumptoQuestionDetail'>{{title}}</view>
+  <view wx:if='{{answer}}' class='content' catchtap='_jumptoAnswerDetail'>
+    <view class='answer withimg'>
+      <text wx:if='{{!showFollowerInfo}}'>{{replier}}：</text>
+      <text>{{answer}}</text>
+    </view>
+    <view class='img'>
+      <image src='{{imgSrc}}' mode='aspectFill'></image>
+    </view>
+  </view>
+  <view class='info-box'>
+    <view class="info">
+      <text>{{followCount}}人关注 · </text>
+      <text>{{answerCount}}个回答</text>
+    </view>
+    <view class="info" wx:if='{{rtime && !showFollowerInfo}}'>{{rtime}}</view>
+  </view>
+</view>

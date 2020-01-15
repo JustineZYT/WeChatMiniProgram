@@ -1,0 +1,56 @@
+function getAttentionMessage(msgType) {
+  if (!msgType) return;
+  var message = {
+    '1': '提出了新问题',
+    '2': '回答了问题',
+    '3': '回答了你关注的问题',
+    '4': '回答了你提出的问题'
+  };
+  return message[msgType.toString()];
+}
+
+function getUserMessage(msgType) {
+  if (!msgType) return;
+  var message = {
+    '0': '邀请你回答问题',
+    '1': '关注了你',
+    '2': '回答了你提问的',
+    '3': '回答了你关注的',
+    '4': '赞了你的回答'
+  };
+  return message[msgType.toString()];
+}
+
+function handleTime(day, hour, minute) {
+  if (day > 0) return day + "天前";
+  if (hour > 0) return hour + "小时前";
+  if (minute > 0) return minute + "分钟前";
+  return "刚刚";
+}
+
+function formatNumber(n) {
+  n = n.toString();
+  return n[1] ? n : '0' + n;
+}
+
+function formatDate(n, splitchar) {
+  if (!n) {
+    return '0';
+  }
+  if (n.toString().indexOf('-') > -1) {
+    return n;
+  }
+  var date = getDate(n * 1000);
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  return [year, month, day].map(formatNumber).join(splitchar || '-');
+}
+
+module.exports = {
+  getAttentionMessage: getAttentionMessage,
+  getUserMessage: getUserMessage,
+  handleTime: handleTime,
+  formatDate: formatDate,
+  formatNumber: formatNumber
+}

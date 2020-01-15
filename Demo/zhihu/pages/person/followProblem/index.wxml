@@ -1,0 +1,8 @@
+<view class='main-wrapper' wx:if='{{questionList.length > 0}}'>
+  <block wx:for='{{questionList}}' wx:key='{{item.id}}'>
+    <problemItem-cmp itemType='2' q_id='{{item.id}}' title='{{item.title}}' followCount='{{item.attention_num}}' answerCount='{{item.answer_num}}'
+    />
+  </block>
+</view>
+
+<view class='no-data' wx:else>暂无关注的问题</view>

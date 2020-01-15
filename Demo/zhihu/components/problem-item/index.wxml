@@ -1,0 +1,11 @@
+<view class='problem-item' catchtap='_jumptoQuestionDetail'>
+  <view class='title showTwoLines'>{{title}}</view>
+  <view class="info" wx:if='{{itemType == 1}}'>
+    <text>{{answerCount}}个回答 · </text>
+    <text>{{rtime}}</text>
+  </view>
+  <view class="info" wx:if='{{itemType == 2}}'>
+    <text>{{followCount}}人关注 · </text>
+    <text>{{answerCount}}个回答</text>
+  </view>
+</view>

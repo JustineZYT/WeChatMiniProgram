@@ -1,0 +1,19 @@
+<!-- 单图片或者单视频放大展示 -->
+
+<!-- 单视频 -->
+<view class='image-single' wx:if='{{images.length == 0 && video}}'>
+  <video id="problem-detail-video" controls bindplay="startPlay" class='videoSingle' src='{{video}}'></video>
+</view>
+
+<!-- 单图片 -->
+<view class='image-single' wx:if='{{images.length == 1 && !video}}'>
+  <image src='{{images[0]}}' data-csrc='{{images[0]}}' mode='aspectFill' catchtap='_previewImage'></image>
+</view>
+
+<!-- 多张图片和视频九宫格展示 -->
+<view class='image-box' wx:if='{{images.length > 1 ||  (images.length > 0 && video)}}'>
+  <video id="problem-detail-video" controls bindplay="startPlay" class='videoItem' wx:if='{{video}}' src='{{video}}'></video>
+  <block wx:for='{{images}}' wx:key='this'>
+    <image src='{{item}}' data-csrc='{{item}}' mode='aspectFill' catchtap='_previewImage'></image>
+  </block>
+</view>

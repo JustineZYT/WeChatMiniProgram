@@ -1,0 +1,10 @@
+<wxs src='../../../wxs/common.wxs' module='common' />
+
+<view class='main-wrapper' wx:if='{{questionList.length > 0}}'>
+  <block wx:for='{{questionList}}' wx:key='{{item.id}}'>
+    <problemItem-cmp q_id='{{item.id}}' title="{{item.title}}" answerCount='{{item.answer_num}}' rtime="{{common.handleTime(item.day,item.hour,item.minute)}}"
+    />
+  </block>
+</view>
+
+<view class='no-data' wx:else>暂无提问</view>

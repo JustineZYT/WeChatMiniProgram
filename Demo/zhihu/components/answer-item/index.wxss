@@ -1,0 +1,73 @@
+@import '../../wxss/common.wxss';
+
+.answer-item {
+  background: #fff;
+  padding: 25rpx;
+  margin-bottom: 2rpx;
+}
+
+.answer-item .person-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.answer-item .person-box image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+
+.answer-item .person-box text {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #999;
+}
+
+.answer-item .content-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.answer-item .content-box .content {
+  font-size: 27rpx;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5em;
+}
+
+.answer-item .content-box .img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-item .content-box .img-wrap image {
+  width: 195rpx;
+  height: 113rpx;
+  border-radius: 8rpx;
+}
+
+.answer-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12rpx;
+}
+
+.answer-item .icon image {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.answer-item .info-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.withimg {
+  width: 465rpx;
+  margin-right: 45rpx;
+}

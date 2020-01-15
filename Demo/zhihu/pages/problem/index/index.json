@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "提问",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "wxAuth-cmp": "/components/wx-auth/index"
+  }
+}

@@ -1,0 +1,119 @@
+.main-wrapper {
+  position: relative;
+  margin-bottom: 102rpx;
+}
+
+.comment-item {
+  padding: 25rpx 30rpx;
+  background: #fff;
+  margin-bottom: 2rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-item .person-info {
+  display: flex;
+}
+
+.comment-item .person-info .avatar {
+  margin-right: 20rpx;
+}
+
+.comment-item .person-info .avatar image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.comment-item .person-info .info-box .nickname-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.comment-item .person-info .info-box .nickname-box .nickname {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.comment-item .person-info .info-box .nickname-box image {
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 10rpx;
+}
+
+.comment-item .person-info .info-box .comment {
+  font-size: 27rpx;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 15rpx;
+}
+
+.comment-item .person-info .info-box .comment .reply {
+  color: #0c8fff;
+  margin-right: 10rpx;
+}
+
+.comment-item .person-info .info-box .time {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.comment-item .action {
+  font-size: 27rpx;
+  font-weight: 400;
+  color: #0c8fff;
+  width: 150rpx;
+  text-align: right;
+}
+
+.action-wrapper {
+  background: #fff;
+  width: 100%;
+  height: 102rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2rpx solid #e5e5e5;
+}
+
+.action-wrapper .action-container {
+  height: 100%;
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.action-wrapper .action-container input {
+  width: 500rpx;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.tip {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #bbb;
+  line-height: 30px;
+}
+
+.action-wrapper .action-container button {
+  width: 138rpx;
+  height: 64rpx;
+  border: 2rpx solid rgba(12, 143, 255, 1);
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #0c8fff;
+  background: #fff;
+  line-height: 64rpx;
+  margin: 0;
+  padding: 0;
+}

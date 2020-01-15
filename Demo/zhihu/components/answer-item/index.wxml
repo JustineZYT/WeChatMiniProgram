@@ -1,0 +1,37 @@
+<!-- 无图 -->
+<view class='answer-item' wx:if='{{itemType == 1}}' catchtap='_jumptoAnswerDetail'>
+  <view class='person-box' wx:if='{{topInfoType == 1}}' catchtap='_jumptoUserCenter'>
+    <image src='{{avatar}}' mode='aspectFill'></image>
+    <text>{{nickName}}</text>
+    <view class='icon' wx:if='{{userType == "2"}}'>
+      <image src='/images/vip.png'></image>
+    </view>
+  </view>
+  <view class='title showTwoLines' wx:if='{{topInfoType == 2}}'>{{title}}</view>
+  <view class='content-box'>
+    <view class='content showThreeLines'>{{answer}}</view>
+  </view>
+  <view class='info-box'>
+    <view class='info'>{{supportCount}}人点赞 · {{commentCount}}个评论</view>
+    <view class='time'>{{rtime}}</view>
+  </view>
+</view>
+
+<!-- 有图 -->
+<view class='answer-item' wx:if='{{itemType == 2}}' catchtap='_jumptoAnswerDetail'>
+  <view class='person-box' wx:if='{{topInfoType == 1}}' catchtap='_jumptoUserCenter'>
+    <image src='{{avatar}}' mode='aspectFill'></image>
+    <text>{{nickName}}</text>
+  </view>
+  <view class='title showTwoLines' wx:if='{{topInfoType == 2}}'>{{title}}</view>
+  <view class='content-box'>
+    <view class='content withimg showThreeLines'>{{answer}}</view>
+    <view class='img-wrap'>
+      <image src='{{imgSrc}}' mode='aspectFill'></image>
+    </view>
+  </view>
+  <view class='info-box'>
+    <view class='info'>{{supportCount}}人点赞 · {{commentCount}}个评论</view>
+    <view class='time'>{{rtime}}</view>
+  </view>
+</view>

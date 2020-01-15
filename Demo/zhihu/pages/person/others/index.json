@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "personTopbar-cmp": "/components/person-topbar/index",
+    "answerItem-cmp": "/components/answer-item/index",
+    "problemItem-cmp": "/components/problem-item/index"
+  }
+}

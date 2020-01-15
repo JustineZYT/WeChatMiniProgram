@@ -8,9 +8,11 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"appid": "wxd1f6d4c81fe891e6",
+	"appid": "wx019862f8d30fb0e3",
 	"projectname": "%E9%80%9A%E8%AE%AF%E5%BD%95",
 	"libVersion": "2.4.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

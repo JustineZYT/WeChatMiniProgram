@@ -1,0 +1,83 @@
+@import '../../../wxss/common.wxss';
+
+.main-wrapper {
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+
+.message-item {
+  padding: 25rpx;
+  background: #fff;
+  margin-bottom: 2rpx;
+}
+
+.message-item .info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-item .info-box .info {
+  display: flex;
+  align-items: center;
+}
+
+.message-item .info-box .info .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15rpx;
+}
+
+.message-item .info-box .info .avatar image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.message-item .info-box .info .icon {
+  display: flex;
+  align-items: center;
+  margin-right: 15rpx;
+}
+
+.message-item .info-box .info .icon image {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.message-item .info-box .info .nickname {
+  font-size: 27rpx;
+  font-weight: 400;
+  color: #0c8fff;
+  margin-right: 15rpx;
+}
+
+.message-item .info-box .info .message {
+  font-size: 27rpx;
+  font-weight: 400;
+  color: #999;
+}
+
+.message-item .info-box .time {
+  display: flex;
+  align-items: center;
+}
+
+.message-item .info-box .time .tip {
+  width: 10rpx;
+  height: 10rpx;
+  background: #0c8fff;
+  border-radius: 50%;
+  margin-right: 13rpx;
+}
+
+.message-item .info-box .time text {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.special {
+  margin: 20rpx 0 0;
+}

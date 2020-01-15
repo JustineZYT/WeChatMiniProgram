@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我关注的问题",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "problemItem-cmp": "/components/problem-item/index"
+  }
+}

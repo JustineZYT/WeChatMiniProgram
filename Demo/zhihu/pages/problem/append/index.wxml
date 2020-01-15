@@ -1,0 +1,20 @@
+<view class="question-container" catchtouchmove="ture" style="height: {{containerHeight}}px">
+  <view class="input-content-container">
+    <textarea maxlength="{{-1}}" bindinput="inputContent" value="{{content_text}}" 
+    class="input-content" placeholder="输入补充追问" placeholder-style='color:#bbb' bindfocus="keyboardFocus"
+    bindblur="keyboardBlur" adjust-position style="height: {{contentHeight}}px;"></textarea>
+  </view>
+  <view id="image-container1" class="image-container">
+    <view wx:for="{{medias}}" wx:for-item="item" wx:for-index="index" wx:key="id" class="image-item">
+      <image src="/images/clear.png" class="delete-image" bindtap="deleteMediaItem" data-item="{{item}}"></image>
+      <image wx:if="{{item.type === 'image'}}" mode="aspectFill" class="tmp-image" src="{{item.url}}"></image>
+      <video controls="{{false}}" show-center-play-btn="{{false}}" wx:if="{{item.type === 'video'}}" class="tmp-image" src="{{item.url}}"></video>
+    </view>
+  </view>
+  <view id="bottom-container1" class="bottom-container">
+    <image bindtap='chooseImage' class="media-item media-image" src="/images/choose-image.png"></image>
+    <image bindtap='chooseVideo' class="media-item media-video" src="/images/choose-video.png"></image>
+    <view bindtap='appendSubmit' class="next-step {{submitEnabled ? 'enabled' : 'disabled'}}">提交</view>
+  </view>
+</view>
+<wxAuth-cmp showWxAuth="{{showWxAuth}}" bind:wxAuthorize='wxAuthorize' />

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "回答详情",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "gridPreview-cmp": "/components/grid-preview/index",
+    "wxAuth-cmp": "/components/wx-auth/index"
+  }
+}
